@@ -4,6 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        white: "#FCFCFC",
+        "athena-grey": "#F8F9FB",
+        wisper: "#F0F1EE",
         primary: {
           accent: "#DDDEA0",
           avacado: "#8A9B6E",
