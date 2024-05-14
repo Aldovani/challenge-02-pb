@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -20,6 +22,13 @@ export default {
           Teak: "#B99274",
           secondary: "#808276",
         },
+      },
+      fontSize: {
+        64: "4rem",
+      },
+      fontFamily: {
+        raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
+        "eb-garamond": ["EB Garamond", ...defaultTheme.fontFamily.sans],
       },
     },
   },
