@@ -4,22 +4,29 @@ import img3 from "../assets/img3.png";
 
 const Steps = () => {
   return (
-    <section>
-      <div>
-        <h1>Steps To Take Care Of Your Plants</h1>
-        <p>
+    <section className="m-20 mb-30 bg-white">
+      <div className="flex flex-col m-auto text-center w-7/12">
+        <h1 className="text-xl font-bold font-eb-garamond text-primary-lunar-green">
+            Steps To Take Care Of Your <span className="text-primary-avacado">Plants</span></h1>
+        <p className="text-xs font-raleway mb-20 text-dark-gray">
           By following these three steps - proper watering, appropriate
           sunlight, and providing essential nutrients - you'll be well on your
           way to maintaining healthy and thriving plants.
         </p>
       </div>
 
-      <div>
+      <div className="flex flex-row w-full justify-between">
+        <div className="flex w-96">
         <img src={img1} alt="Imagem de um ambiente interno com muitas folhagens" />
+        </div>
+        
+        <div className="flex w-96">
         <img src={img2} alt="Imagem de um ambiente externo com muitas folhagens" />
-        <div>
+        </div>
+       
+        <div className=" flex flex-col w-96">
           <img src={img3} alt="Imagem de uma janela redonda com um bonsai" />
-          <p>
+          <p className="text-sm mt-6 leading-6 text-secondary-secondary">
             Our website offers a wide array of stunning plants, ranging from
             vibrant flowers to lush indoor foliage, allowing you to create your
             very own green oasis. In addition to our extensive plant selection,
