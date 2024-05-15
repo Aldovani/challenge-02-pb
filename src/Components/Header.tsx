@@ -1,21 +1,21 @@
-import logo from '../assets/logo.svg';
-import user from '../assets/user.png';
-
+import logo from "../assets/logo.svg";
+import user from "../assets/user.png";
+ 
 const Header = () => {
   return (
-    <div>
-        <img src={logo} alt="Exemplo" />
-        <div>
-        <ul>
-        <li>Home </li>
-        <li>Register </li>
-        <li>Products </li>
-        <li>About us </li>
-      </ul>
-        </div>
+    <header className="flex justify-between items-center p-2 pl-20 pr-20 bg-athena-grey">
+      <img src={logo} alt="Logo da Plant Pace" />
+      <div className="flex flex-row flex-wrap">
+        <ul className="flex flex-row gap-6">
+          <li className="text-primary-avacado">Home </li>
+          <li className="text-primary-lunar-green">Register </li>
+          <li className="text-primary-lunar-green">Products </li>
+          <li className="text-primary-lunar-green">About us </li>
+        </ul>
+      </div>
       <img src={user} alt="Exemplo" />
-    </div>
-  )
-}
-
-export default Header
+    </header>
+  );
+};
+ 
+export default Header;
