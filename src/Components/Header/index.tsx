@@ -8,16 +8,16 @@ const Header = () => {
       <img src={logo} alt="Logo da Plant Pace" />
       <nav className="flex flex-row flex-wrap">
         <ul className="flex flex-row gap-6">
-          <li className="">
+          <li>
             <ActiveLink to="/">Home</ActiveLink>
           </li>
-          <li className="text-primary-lunar-green">
+          <li>
             <ActiveLink to="/register">Register</ActiveLink>
           </li>
-          <li className="">
+          <li>
             <ActiveLink to="/products">Products</ActiveLink>
           </li>
-          <li className="text-primary-lunar-green">
+          <li>
             <ActiveLink to="/about">About us</ActiveLink>
           </li>
         </ul>
