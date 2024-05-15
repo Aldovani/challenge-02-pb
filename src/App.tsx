@@ -1,9 +1,9 @@
-import PlantRegistration from "./components/PlantRegistration";
+import HeroHome from "./components/HeroHome";
 
 const App = () => {
   return (
     <div className="App">
-      <PlantRegistration />
+      <HeroHome />
     </div>
   );
 };
