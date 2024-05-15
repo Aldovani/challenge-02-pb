@@ -11,6 +11,7 @@
     "db": "npx json-server ./src/db/db.json"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
