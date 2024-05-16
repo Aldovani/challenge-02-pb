@@ -6,7 +6,7 @@ export function DefaultLayout() {
   return (
     <div>
       <Header/>
-      <Outlet/>
+        <Outlet/>
       <Footer/>
     </div>
   )
