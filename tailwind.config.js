@@ -25,11 +25,14 @@ export default {
       },
       fontSize: {
         64: "4rem",
+        'xl': '3rem',
+        'xl2': '2.2rem'
       },
       fontFamily: {
         raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
         "eb-garamond": ["EB Garamond", ...defaultTheme.fontFamily.sans],
-        inter: ["Inter", ...defaultTheme.fontFamily.sans]
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
+        "pacifico": ["Pacifico", ...defaultTheme.fontFamily.sans]
       },
     },
   },

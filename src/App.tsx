@@ -1,11 +1,13 @@
-import HeroHome from "./components/HeroHome";
-
-const App = () => {
+import { Router } from "./Router";
+import { BrowserRouter } from "react-router-dom";
+function App() {
   return (
-    <div className="App">
-      <HeroHome />
-    </div>
+    <>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </>
   );
-};
+}
 
 export default App;
