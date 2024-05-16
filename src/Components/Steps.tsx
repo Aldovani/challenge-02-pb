@@ -1,6 +1,7 @@
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
+import { Button } from "./Button";
 
 const Steps = () => {
   return (
@@ -26,7 +27,7 @@ const Steps = () => {
        
         <div className="w-72 flex flex-col m-auto md:mt-0 md:w-96">
           <img src={img3} alt="Imagem de uma janela redonda com um bonsai" />
-          <p className="text-sm mt-6 leading-6 text-secondary-secondary">
+          <p className="text-sm mt-6 mb-10 leading-6 text-secondary-secondary">
             Our website offers a wide array of stunning plants, ranging from
             vibrant flowers to lush indoor foliage, allowing you to create your
             very own green oasis. In addition to our extensive plant selection,
@@ -40,8 +41,10 @@ const Steps = () => {
             the way. Get ready to explore our virtual garden and discover the
             joys of gardening with us!
           </p>
+          <Button to="/"> See more photos</Button>
         </div>
       </div>
+      
     </section>
   );
 };
