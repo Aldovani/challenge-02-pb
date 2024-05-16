@@ -20,7 +20,7 @@ const HeroHome = () => {
             vibrant flowers to lush indoor foliage, allowing you to create your
             very own green oasis.
           </p>
-          <button href= "#" className="bg-primary-lunar-green text-white py-2 px-8 mt-6 text-sm font-raleway">
+          <button className="bg-primary-lunar-green text-white py-2 px-8 mt-6 text-sm font-raleway">
             Shop Now
           </button>
           <a
