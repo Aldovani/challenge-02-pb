@@ -3,7 +3,7 @@ import image23 from "../assets/image23.png";
 
 const HeroHome = () => {
   return (
-    <div className="bg-athena-grey pl-20 pr-10 pb-36 relative">
+    <div className="bg-wisper pl-20 pb-40 relative">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <section className="max-w-xl relative mt-20">
           <div className="flex items-center mb-5">
@@ -25,7 +25,7 @@ const HeroHome = () => {
           </button>
           <a
             href="#"
-            className="relative text-secondary-secondary text-sm md:block font-raleway "
+            className="relative md:top-36 mt-6 mb-4 text-secondary-secondary text-sm font-raleway block"
           >
             Learn Gardening →
           </a>
@@ -34,14 +34,14 @@ const HeroHome = () => {
           <img
             src={leftPlant}
             alt="Left Plant"
-            className="absolute left-0 bottom-0 w-36 mix-blend-luminosity hidden lg:block"
+            className="absolute left-0 -bottom-32 w-48 mix-blend-luminosity hidden lg:block"
           />
         </section>
         <section>
           <img
             src={image23}
             alt="Right Plant"
-            className="absolute right-0 bottom-0 mix-blend-luminosity brightness-90 hidden lg:block"
+            className="absolute bottom-0 right-0 mix-blend-luminosity h-full hidden lg:block filter-custom-drop-shadow"
           />
         </section>
       </div>

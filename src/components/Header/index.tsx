@@ -4,7 +4,7 @@ import { ActiveLink } from "./ActiveLink";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center p-2 pl-20 pr-10 bg-athena-grey">
+    <header className="flex justify-between items-center p-2 pl-20 pr-20 bg-athena-grey">
       <img src={logo} alt="Logo da Plant Pace" />
       <nav className="flex flex-row flex-wrap">
         <ul className="flex flex-row gap-6">
