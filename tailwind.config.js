@@ -25,6 +25,8 @@ export default {
       },
       fontSize: {
         64: "4rem",
+        'xl': '3rem',
+        'xl2': '2.2rem'
       },
       fontFamily: {
         raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
