@@ -31,8 +31,15 @@ export default {
       fontFamily: {
         raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
         "eb-garamond": ["EB Garamond", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
+        "pacifico": ["Pacifico", ...defaultTheme.fontFamily.sans]
       },
+      filter: {
+        'custom-drop-shadow': 'drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.35))',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-filters')
+  ],
 };
