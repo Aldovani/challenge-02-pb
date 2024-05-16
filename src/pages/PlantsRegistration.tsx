@@ -11,8 +11,7 @@ interface FormErrors {
   features?: string;
   description?: string;
 }
-
-const PlantsRegistration = () => {
+export function PlantsRegistration() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [successMessage, setSuccessMessage] = useState<string>("");
 
@@ -60,7 +59,6 @@ const PlantsRegistration = () => {
       setSuccessMessage("");
     }
   };
-
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="p-8 rounded-lg flex flex-col sm:flex-row max-w-4xl w-full">
@@ -203,6 +201,4 @@ const PlantsRegistration = () => {
       </div>
     </div>
   );
-};
-
-export default PlantsRegistration;
+}

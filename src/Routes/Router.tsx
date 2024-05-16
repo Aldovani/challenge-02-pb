@@ -10,14 +10,14 @@ import { SignIn } from "@clerk/clerk-react";
 export function Router() {
   return (
     <Routes>
-    <Route element={<DefaultLayout/>}>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<AboutUs />} />
-      <Route path="/plants-registration" element={<PlantsRegistration />} />
-      <Route path="/product-details" element={<ProductDetails />} />
-      <Route path="/product-list" element={<ProductList />} />
-    </Route>
-      <Route path="/sing-in" element={<SignIn/>} />
-  </Routes>
+      <Route element={<DefaultLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/plants-registration" element={<PlantsRegistration />} />
+        <Route path="/product-details" element={<ProductDetails />} />
+        <Route path="/product-list" element={<ProductList />} />
+      </Route>
+      <Route path="/sing-in" element={<SignIn />} />
+    </Routes>
   );
 }
