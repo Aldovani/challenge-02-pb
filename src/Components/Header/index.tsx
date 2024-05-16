@@ -1,12 +1,17 @@
+import { UserButton } from "@clerk/clerk-react";
 import logo from "../../assets/logo.svg";
-import user from "../../assets/user.png";
 import { ActiveLink } from "./ActiveLink";
-
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/home");
+  };
   return (
     <header className="flex justify-between items-center p-2 pl-20 pr-20 bg-athena-grey">
-      <img src={logo} alt="Logo da Plant Pace" />
+      <img onClick={handleClick} className="cursor-pointer" src={logo}  alt="Logo da Plant Pace" />
       <nav className="flex flex-row flex-wrap">
         <ul className="flex flex-row gap-6">
           <li>
@@ -23,7 +28,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <img src={user} alt="Exemplo" />
+      <UserButton />
     </header>
   );
 };
