@@ -1,8 +1,14 @@
 import logo from "../assets/logo2.svg";
- 
-const Footer = () => {
+
+interface backgroundFooter {
+  option: number;
+}
+
+// Componente de rodapé
+const Footer = ({ option }: backgroundFooter) => {
+  const background = option === 1 ? 'bg-primary-lunar-green' : 'bg-footer-image';
   return (
-    <footer className="font-raleway text-xs bg-primary-lunar-green text-white pb-14">
+    <footer className={`font-raleway text-xs ${background} text-white pb-14`}>
       <div className="flex flex-col md:flex-row justify-center items-center md:justify-between p-2 pl-20 pr-20">
         <div className="mt-14 mb-20 md:mt-32">
           <h1 className="font-eb-garamond font-bold text-xl2 md:text-xl mb-10">Stay Fresh</h1>
