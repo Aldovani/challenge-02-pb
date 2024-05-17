@@ -1,4 +1,4 @@
-import PlantsRegistration from "./pages/PlantsRegistration";
+import { PlantsRegistration } from "./pages/PlantsRegistration";
 
 function App() {
   return <PlantsRegistration />;
