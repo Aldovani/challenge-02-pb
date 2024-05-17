@@ -3,8 +3,6 @@ import logo from "../assets/logo2.svg";
 interface backgroundFooter {
   option: number;
 }
-
-// Componente de rodapé
 const Footer = ({ option }: backgroundFooter) => {
   const background = option === 1 ? 'bg-primary-lunar-green' : 'bg-footer-image';
   return (
