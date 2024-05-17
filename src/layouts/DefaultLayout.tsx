@@ -7,7 +7,7 @@ export function DefaultLayout() {
     <div>
       <Header/>
       <Outlet/>
-      <Footer option={2}/>
+      <Footer option={1}/>
     </div>
   )
 }
