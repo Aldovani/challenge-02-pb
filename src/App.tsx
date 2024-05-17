@@ -1,15 +1,7 @@
-import { Router } from "./Routes/Router";
-
-import { BrowserRouter } from "react-router-dom";
-
+import PlantsRegistration from "./pages/PlantsRegistration";
 
 function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-    </>
-  );}
-  
+  return <PlantsRegistration />;
+}
+
 export default App;

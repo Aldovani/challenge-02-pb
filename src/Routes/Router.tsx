@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { AboutUs } from "../pages/AboutUs";
 import { Home } from "../pages/Home";
-import { PlantsRegistration } from "../pages/PlantsRegistration";
+import PlantsRegistration from "../pages/PlantsRegistration";
 import { ProductDetails } from "../pages/ProductsDetails";
 import { ProductList } from "../pages/ProductList";
 import { DefaultLayout } from "../layouts/DefaultLayout";
