@@ -26,6 +26,9 @@ export default {
       fontSize: {
         64: "4rem",
       },
+      boxShadow: {
+        "card-plant": "0px 6.48px 6px 0px rgba(41, 41, 41, 0.08)",
+      },
       fontFamily: {
         raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
         "eb-garamond": ["EB Garamond", ...defaultTheme.fontFamily.sans],
