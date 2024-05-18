@@ -155,16 +155,18 @@ const Form = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-start justify-start font-inter bg-wisper pl-20">
+    <div className="flex items-start justify-start font-inter bg-wisper pl-20 relative">
       <div className="p-8 flex flex-col sm:flex-row max-w-4xl w-full">
-        <div className="w-full sm:w-1/2 p-4 -mr-4">
-          <h2 className="text-2xl font-bold mb-6 text-primary-lunar-green">
+        <div className="w-full sm:w-1/2 p-4">
+          <h2 className="text-2xl mb-6 text-primary-lunar-green font-semibold">
             Plant registration
           </h2>
           <hr className="mb-6 p-2 border-dark-gray" />
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label className="block text-dark-IBBNB">Plant name</label>
+              <label className="block text-dark-IBBNB font-medium">
+                Plant name
+              </label>
               <input
                 type="text"
                 name="plantName"
@@ -178,7 +180,9 @@ const Form = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-dark-IBBNB">Plant subtitle</label>
+              <label className="block text-dark-IBBNB font-medium">
+                Plant subtitle
+              </label>
               <input
                 type="text"
                 name="plantSubtitle"
@@ -192,7 +196,9 @@ const Form = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-dark-IBBNB">Plant type</label>
+              <label className="block text-dark-IBBNB font-medium">
+                Plant type
+              </label>
               <input
                 type="text"
                 name="plantType"
@@ -206,7 +212,9 @@ const Form = () => {
             </div>
             <div className="mb-4 flex">
               <div className="mr-2 flex-1">
-                <label className="block text-dark-IBBNB">Price</label>
+                <label className="block text-dark-IBBNB font-medium">
+                  Price
+                </label>
                 <input
                   type="text"
                   name="price"
@@ -220,7 +228,7 @@ const Form = () => {
                 )}
               </div>
               <div className="ml-2 flex-1">
-                <label className="block text-dark-IBBNB">
+                <label className="block text-dark-IBBNB font-medium">
                   Discount percentage
                 </label>
                 <input
@@ -237,7 +245,9 @@ const Form = () => {
               </div>
             </div>
             <div className="mb-4">
-              <label className="block text-dark-IBBNB">Label</label>
+              <label className="block text-dark-IBBNB font-medium">
+                Label:
+              </label>
               <div className="mt-1 flex items-start">
                 <input
                   type="radio"
@@ -249,7 +259,7 @@ const Form = () => {
                 />
                 <label
                   htmlFor="indoor"
-                  className={`mr-4 ${
+                  className={`mr-4  font-medium ${
                     selectedLabel === "indoor"
                       ? "text-dark-IBBNB"
                       : "text-dark-gray"
@@ -267,7 +277,7 @@ const Form = () => {
                 />
                 <label
                   htmlFor="outdoor"
-                  className={`${
+                  className={`font-medium ${
                     selectedLabel === "outdoor"
                       ? "text-dark-IBBNB"
                       : "text-dark-gray"
@@ -281,7 +291,9 @@ const Form = () => {
               )}
             </div>
             <div className="mb-4">
-              <label className="block text-dark-IBBNB">Features</label>
+              <label className="block text-dark-IBBNB font-medium">
+                Features
+              </label>
               <textarea
                 name="features"
                 className="mt-1 p-2 w-full border border-dark-gray rounded-md resize-none"
@@ -294,7 +306,9 @@ const Form = () => {
             </div>
 
             <div className="mb-6">
-              <label className="block text-dark-IBBNB">Description</label>
+              <label className="block text-dark-IBBNB font-medium">
+                Description
+              </label>
               <textarea
                 name="description"
                 className="mt-1 p-2 w-full border border-dark-gray rounded-md resize-none"
@@ -308,7 +322,7 @@ const Form = () => {
 
             <button
               type="submit"
-              className="w-full bg-primary-lunar-green text-white py-2 hover:bg-primary-avacado"
+              className="w-full bg-primary-lunar-green text-white font-bold py-2 hover:bg-primary-avacado transition"
             >
               Register
             </button>
@@ -317,14 +331,12 @@ const Form = () => {
             )}
           </form>
         </div>
-        <div className="w-full lg:w-1/2 p-4 justify-center hidden lg:block relative">
-          <div className="relative flex justify-end items-end h-full">
-            <img
-              src={plantImage}
-              alt="Plant"
-              className="fixed bottom-0 right-0 mix-blend-luminosity h-48 lg:h-full filter-custom-drop-shadow"
-            />
-          </div>
+        <div className="h-full">
+          <img
+            src={plantImage}
+            alt="Plant"
+            className="filter-custom-drop-shadow mix-blend-luminosity h-full absolute bottom-0 right-0"
+          />
         </div>
       </div>
     </div>
