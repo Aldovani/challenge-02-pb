@@ -5,6 +5,7 @@ import { PlantsRegistration } from "./pages/PlantsRegistration";
 import { ProductDetails } from "./pages/ProductsDetails";
 import { ProductList } from "./pages/ProductList";
 import { DefaultLayout } from "./layouts/DefaultLayout";
+import { NotFound } from "./pages/NotFound";
 export function Router(){
   return (
     <Routes>
@@ -15,6 +16,7 @@ export function Router(){
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/product-list" element={<ProductList />} />
       </Route>
+        <Route path="*" element={<NotFound/>}/>
     </Routes>
   );
 }
