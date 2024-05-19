@@ -1,24 +1,23 @@
 import { useState, FormEvent } from "react";
+import { Plants } from "../types/Plants";
 import plantImage from "../assets/image23.png";
-
-type FormField =
-  | "plantName"
-  | "plantSubtitle"
-  | "plantType"
-  | "price"
-  | "discount"
-  | "label"
-  | "features"
-  | "description";
-
-type FormErrors = {
-  [key in FormField]?: string;
-};
+import { FormErrors } from "../types/Form";
+import { FormField } from "../types/Form";
+import { httpRequest } from "../utils/httpRequest";
 
 const Form = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [successMessage, setSuccessMessage] = useState<string>("");
   const [selectedLabel, setSelectedLabel] = useState<string>("");
+  const [nextId, setNextId] = useState<number>(6);
+
+  const imageUrls = [
+    "/plant1.png",
+    "/plant2.png",
+    "/plant3.png",
+    "/plant4.png",
+  ];
+  const [imageIndex, setImageIndex] = useState(0);
 
   const formatPrice = (value: string): string => {
     if (!value.startsWith("$")) {
@@ -102,7 +101,7 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -146,30 +145,65 @@ const Form = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      setSuccessMessage("Seu formulário foi registrado com sucesso");
-      form.reset();
-      setSelectedLabel("");
+      const label = formData.get("label") as string;
+      const plantType = formData.get("plantType") as string;
+
+      const newPlant: Plants = {
+        id: nextId,
+        name: formData.get("plantName") as string,
+        subtitle: formData.get("plantSubtitle") as string,
+        label: [label, plantType],
+        price: formData.get("price") as string,
+        isInSale: !!formData.get("discount"),
+        discountPercentage: parseInt(
+          (formData.get("discount") as string).replace("%", ""),
+        ),
+        features: formData.get("features") as string,
+        description: formData.get("description") as string,
+        imgUrl: imageUrls[imageIndex],
+      };
+
+      try {
+        const response = await httpRequest.post<Plants>("/", newPlant);
+
+        if (response.status === 201) {
+          setSuccessMessage("Seu formulário foi registrado com sucesso");
+          form.reset();
+          setSelectedLabel("");
+          setImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
+          setNextId((prevId) => prevId + 1);
+        } else {
+          setSuccessMessage("");
+          console.error("Erro ao enviar dados:", response.data);
+        }
+      } catch (error) {
+        console.error("Erro ao enviar requisição:", error);
+      }
     } else {
       setSuccessMessage("");
     }
   };
 
   return (
-    <div className="flex items-start justify-start font-inter bg-wisper pl-20 relative">
-      <div className="p-8 flex flex-col sm:flex-row max-w-4xl w-full">
-        <div className="w-full sm:w-1/2 p-4">
+    <div className=" flex items-center  sm:items-start justify-center sm:justify-start font-inter bg-wisper lg:pl-20 relative">
+      <div className="container  2xl:mx-auto  justify-center lg:justify-normal sm:p-8 flex flex-col sm:flex-row max-w-4xl w-full">
+        <div className="w-full lg:w-1/2 p-4">
           <h2 className="text-2xl mb-6 text-primary-lunar-green font-semibold">
             Plant registration
           </h2>
           <hr className="mb-6 p-2 border-dark-gray" />
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label className="block text-dark-IBBNB font-medium">
+              <label
+                htmlFor="plantName"
+                className="block text-dark-IBBNB font-medium"
+              >
                 Plant name
               </label>
               <input
                 type="text"
                 name="plantName"
+                id="plantName"
                 className="mt-1 p-2 w-full border border-dark-gray rounded-md"
                 placeholder="Echinocereus Cactus"
                 onBlur={handleBlur}
@@ -179,13 +213,17 @@ const Form = () => {
               )}
             </div>
 
-            <div className="mb-4">
-              <label className="block text-dark-IBBNB font-medium">
+            <div className="mb-4 ">
+              <label
+                htmlFor="plantSubtitle"
+                className="block text-dark-IBBNB font-medium"
+              >
                 Plant subtitle
               </label>
               <input
                 type="text"
                 name="plantSubtitle"
+                id="plantSubtitle"
                 className="mt-1 p-2 w-full border border-dark-gray rounded-md"
                 placeholder="A majestic addition to your plant collection"
                 onBlur={handleBlur}
@@ -196,12 +234,16 @@ const Form = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-dark-IBBNB font-medium">
+              <label
+                htmlFor="plantType"
+                className="block text-dark-IBBNB font-medium"
+              >
                 Plant type
               </label>
               <input
                 type="text"
                 name="plantType"
+                id="plantType"
                 className="mt-1 p-2 w-full border border-dark-gray rounded-md"
                 placeholder="Cactus"
                 onBlur={handleBlur}
@@ -210,14 +252,18 @@ const Form = () => {
                 <span className="text-red-500">{errors.plantType}</span>
               )}
             </div>
-            <div className="mb-4 flex">
-              <div className="mr-2 flex-1">
-                <label className="block text-dark-IBBNB font-medium">
+            <div className="mb-4 gap-2 sm:flex ">
+              <div className="   flex-1">
+                <label
+                  htmlFor="price"
+                  className="block text-dark-IBBNB font-medium"
+                >
                   Price
                 </label>
                 <input
                   type="text"
                   name="price"
+                  id="price"
                   className="mt-1 p-2 w-full border border-dark-gray rounded-md"
                   placeholder="$139.99"
                   onChange={handlePriceChange}
@@ -227,13 +273,17 @@ const Form = () => {
                   <span className="text-red-500">{errors.price}</span>
                 )}
               </div>
-              <div className="ml-2 flex-1">
-                <label className="block text-dark-IBBNB font-medium">
+              <div className=" max-sm:mt-3 flex-1">
+                <label
+                  htmlFor="discount"
+                  className="block text-dark-IBBNB font-medium"
+                >
                   Discount percentage
                 </label>
                 <input
                   type="text"
                   name="discount"
+                  id="discount"
                   className="mt-1 p-2 w-full border border-dark-gray rounded-md"
                   placeholder="20%"
                   onChange={handleDiscountChange}
@@ -249,53 +299,61 @@ const Form = () => {
                 Label:
               </label>
               <div className="mt-1 flex items-start">
-                <input
-                  type="radio"
-                  name="label"
-                  className="mr-2"
-                  id="indoor"
-                  value="indoor"
-                  onChange={() => setSelectedLabel("indoor")}
-                />
-                <label
-                  htmlFor="indoor"
-                  className={`mr-4  font-medium ${
-                    selectedLabel === "indoor"
-                      ? "text-dark-IBBNB"
-                      : "text-dark-gray"
-                  }`}
-                >
-                  Indoor
-                </label>
-                <input
-                  type="radio"
-                  name="label"
-                  className="mr-2"
-                  id="outdoor"
-                  value="outdoor"
-                  onChange={() => setSelectedLabel("outdoor")}
-                />
-                <label
-                  htmlFor="outdoor"
-                  className={`font-medium ${
-                    selectedLabel === "outdoor"
-                      ? "text-dark-IBBNB"
-                      : "text-dark-gray"
-                  }`}
-                >
-                  Outdoor
-                </label>
+                <div className="flex items-center">
+                  <input
+                    type="radio"
+                    name="label"
+                    className="mr-2"
+                    id="indoor"
+                    value="indoor"
+                    onChange={() => setSelectedLabel("indoor")}
+                  />
+                  <label
+                    htmlFor="indoor"
+                    className={`mr-4  font-medium ${
+                      selectedLabel === "indoor"
+                        ? "text-dark-IBBNB"
+                        : "text-dark-gray"
+                    }`}
+                  >
+                    Indoor
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    type="radio"
+                    name="label"
+                    className="mr-2"
+                    id="outdoor"
+                    value="outdoor"
+                    onChange={() => setSelectedLabel("outdoor")}
+                  />
+                  <label
+                    htmlFor="outdoor"
+                    className={`font-medium ${
+                      selectedLabel === "outdoor"
+                        ? "text-dark-IBBNB"
+                        : "text-dark-gray"
+                    }`}
+                  >
+                    Outdoor
+                  </label>
+                </div>
               </div>
               {errors.label && (
                 <span className="text-red-500">{errors.label}</span>
               )}
             </div>
             <div className="mb-4">
-              <label className="block text-dark-IBBNB font-medium">
+              <label
+                htmlFor="features"
+                className="block text-dark-IBBNB font-medium"
+              >
                 Features
               </label>
               <textarea
                 name="features"
+                id="features"
                 className="mt-1 p-2 w-full border border-dark-gray rounded-md resize-none"
                 placeholder="Species: Echinocereus..."
                 onBlur={handleBlur}
@@ -306,11 +364,15 @@ const Form = () => {
             </div>
 
             <div className="mb-6">
-              <label className="block text-dark-IBBNB font-medium">
+              <label
+                htmlFor="description"
+                className="block text-dark-IBBNB font-medium"
+              >
                 Description
               </label>
               <textarea
                 name="description"
+                id="description"
                 className="mt-1 p-2 w-full border border-dark-gray rounded-md resize-none"
                 placeholder="Ladyfinger cactus..."
                 onBlur={handleBlur}
@@ -331,11 +393,11 @@ const Form = () => {
             )}
           </form>
         </div>
-        <div className="h-full">
+        <div className="hidden lg:block h-full">
           <img
             src={plantImage}
             alt="Plant"
-            className="filter-custom-drop-shadow mix-blend-luminosity h-full absolute bottom-0 right-0"
+            className=" filter-custom-drop-shadow mix-blend-luminosity h-full absolute bottom-0 right-0"
           />
         </div>
       </div>
