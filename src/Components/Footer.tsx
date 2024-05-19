@@ -1,4 +1,5 @@
 import logo from "../assets/logo2.svg";
+import { Link } from "react-router-dom";
 
 interface backgroundFooter {
   option: number;
@@ -17,18 +18,18 @@ const Footer = ({ option }: backgroundFooter) => {
           <div>
             <ul>
               <li className="font-bold text-lg pb-4">Links</li>
-              <li className="font-thin pb-2">About us</li>
-              <li className="font-thin pb-2">Products</li>
-              <li className="font-thin">Blogs</li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="/about">About us</Link></li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="*">Products</Link></li>
+              <li className="font-thin hover:text-primary-accent"> <Link to="*">Blogs</Link></li>
             </ul>
           </div>
  
           <div >
             <ul>
               <li className="font-bold text-lg pb-4">Comunity</li>
-              <li className="font-thin pb-2">About us</li>
-              <li className="font-thin pb-2">Products</li>
-              <li className="font-thin">Blogs</li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="/about">About us</Link></li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="*">Products</Link></li>
+              <li className="font-thin hover:text-primary-accent"> <Link to="*">Blogs</Link></li>
             </ul>
           </div>
         </div>
@@ -40,7 +41,9 @@ const Footer = ({ option }: backgroundFooter) => {
  
       <div className="flex justify-between p-4 pl-10 pr-10 md:pl-20 md:pr-20 ">
         <div>
-          <img src={logo} alt="Exemplo" />
+        <Link to="/">
+            <img src={logo} alt="Logo da Plant Pace" className="cursor-pointer"/>
+          </Link>
         </div>
  
         <div className="font-thin flex flex-col justify-center items-center w-30 ">
