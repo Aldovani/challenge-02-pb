@@ -5,8 +5,8 @@ export function ProductLoadList() {
 
   return (
     <>
-      {numberOfElements.map(() => (
-        <ProductLoadItem />
+      {numberOfElements.map((_, index) => (
+        <ProductLoadItem key={index} />
       ))}
     </>
   );
