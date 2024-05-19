@@ -6,6 +6,7 @@ import { ProductDetails } from "../pages/ProductsDetails";
 import { Products } from "../pages/Products";
 import { DefaultLayout } from "../layouts/DefaultLayout";
 import { SignIn } from "../pages/SignIn";
+import { NotFound } from "../pages/NotFound";
 import { ProductList } from "../Components/ProductList";
 
 export function Router() {
@@ -15,11 +16,12 @@ export function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/plants-registration" element={<PlantsRegistration />} />
-        <Route path="/product-details/:id" element={<ProductDetails />} />
-        <Route path="/product-list" element={<ProductList/>} />
+        <Route path="/register" element={<PlantsRegistration />} />
+        <Route path="/plant/:id" element={<ProductDetails />} />
+        <Route path="/product" element={<ProductList />} />
       </Route>
       <Route path="/sing-in" element={<SignIn />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
