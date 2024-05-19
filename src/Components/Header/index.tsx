@@ -10,7 +10,7 @@ const Header = () => {
     navigate("/home");
   };
   return (
-    <header className="flex justify-between items-center p-2 pl-20 pr-20 bg-athena-grey">
+    <header className="flex justify-between items-center p-2 pl-20 pr-20 bg-wisper">
       <img onClick={handleClick} className="cursor-pointer" src={logo}  alt="Logo da Plant Pace" />
       <nav className="flex flex-row flex-wrap">
         <ul className="flex flex-row gap-6">
