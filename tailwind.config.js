@@ -25,8 +25,8 @@ export default {
       },
       fontSize: {
         64: "4rem",
-        xl: "3rem",
-        xl2: "2.2rem",
+        'xl': '3rem',
+        'xl2': '2.2rem'
       },
       boxShadow: {
         "card-plant": "0px 6.48px 6px 0px rgba(41, 41, 41, 0.08)",
