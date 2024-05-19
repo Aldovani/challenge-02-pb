@@ -15,13 +15,13 @@ const HeroHome = () => {
             Discover Your <span className="text-primary-avacado">Green</span>{" "}
             Side
           </h1>
-          <p className="text-base mt-4 text-secondary-secondary font-raleway">
+          <p className="text-base mt-4 mb-6 text-secondary-secondary font-raleway">
             We are your one-stop destination for all things green and growing.
             Our website offers a wide array of stunning plants, ranging from
             vibrant flowers to lush indoor foliage, allowing you to create your
             very own green oasis.
           </p>
-            <Button to="/product-list">
+            <Button to="/products">
               Shop Now
             </Button>
           <a

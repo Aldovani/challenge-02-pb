@@ -1,12 +1,11 @@
 import { UserButton } from "@clerk/clerk-react";
 import logo from "../../assets/logo.svg";
 import { ActiveLink } from "./ActiveLink";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -40,7 +39,7 @@ const Header = () => {
               <ActiveLink to="/">Home</ActiveLink>
             </li>
             <li>
-              <ActiveLink to="/register">Register</ActiveLink>
+              <ActiveLink to="/plants-registration">Register</ActiveLink>
             </li>
             <li>
               <ActiveLink to="/products">Products</ActiveLink>
@@ -79,7 +78,7 @@ const Header = () => {
                 <ActiveLink to="/">Home</ActiveLink>
               </li>
               <li>
-                <ActiveLink to="/register">Register</ActiveLink>
+                <ActiveLink to="/plants-registration">Register</ActiveLink>
               </li>
               <li>
                 <ActiveLink to="/products">Products</ActiveLink>

@@ -32,7 +32,7 @@ export function ProductDetails() {
               </div>
             ))}
           </div>
-          <p className="my-4 font-bold text-lg md:text-2xl">{plants.price}</p>
+          <p className="my-4 font-bold text-lg md:text-2xl">${plants.price}</p>
           <Button to="/404">Check out</Button>
           <p className="my-4 font-bold text-lg md:text-2xl">Features</p>
           <ul className="list-disc ml-5 font-raleway">
