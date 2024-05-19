@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'green-6': '#83E281',
+        "green-6": "#83E281",
         white: "#FCFCFC",
         "athena-grey": "#F8F9FB",
         wisper: "#F0F1EE",
@@ -26,8 +26,8 @@ export default {
       },
       fontSize: {
         64: "4rem",
-        'xl': '3rem',
-        'xl2': '2.2rem'
+        xl: "3rem",
+        xl2: "2.2rem",
       },
       boxShadow: {
         "card-plant": "0px 6.48px 6px 0px rgba(41, 41, 41, 0.08)",
@@ -46,6 +46,8 @@ export default {
       },
       backgroundImage: {
         "footer-image": "url('./assets/bgFooter2.png')",
+        customRadial:
+          "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%)",
       },
     },
   },
