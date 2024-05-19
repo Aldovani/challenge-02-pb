@@ -16,6 +16,7 @@ export function Team() {
               name={profile.name}
               path={profile.slug}
               key={profile.slug}
+              role={profile.role}
             />
           ))}
         </div>
@@ -23,3 +24,4 @@ export function Team() {
     </section>
   );
 }
+  

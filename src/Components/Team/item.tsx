@@ -4,9 +4,10 @@ type TeamItemProps = {
   path: string;
   imageUrl: string;
   name: string;
+  role: string;
 };
 
-export function TeamItem({ imageUrl, path, name }: TeamItemProps) {
+export function TeamItem({ imageUrl, path, name, role }: TeamItemProps) {
   const firstName = name.split(" ")[0];
   return (
     <NavLink to={`/about/${path}`} className="overflow-hidden  relative h-full">
@@ -18,7 +19,7 @@ export function TeamItem({ imageUrl, path, name }: TeamItemProps) {
             {firstName}
           </h4>
           <h6 className="text-dark-gray text-[1.5rem] font-eb-garamond">
-            FullStack
+            {role}
           </h6>
         </div>
       </div>

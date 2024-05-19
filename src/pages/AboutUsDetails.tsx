@@ -44,20 +44,20 @@ export function AboutUsDetails() {
                 <h3 className="font-eb-garamond font-medium text-2xl text-dark-gray ">
                   about
                 </h3>
-                <p className="text-secondary-secondary font-raleway ">
+                <p className="text-secondary-secondary mt-2 font-raleway ">
                   {data?.about}
                 </p>
               </section>
 
               <section className="mt-10">
                 <h3 className="font-eb-garamond font-medium text-2xl text-dark-gray ">
-                technologies
+                  technologies
                 </h3>
-                <ul className="flex gap-5 mt-3 flex-wrap">
+                <ul className="flex gap-5 mt-2 flex-wrap">
                   {data?.technologies.map((tech, index) => (
                     <li
                       key={index}
-                      className="text-secondary-secondary font-raleway mt-2 "
+                      className="lowercase text-secondary-secondary font-raleway mt-2 "
                     >
                       {tech}
                     </li>
@@ -87,12 +87,20 @@ export function AboutUsDetails() {
                 </h3>
                 <ul className="flex gap-5 mt-3">
                   <li>
-                    <a href={data?.githubUrl} target="_blank">
+                    <a
+                      href={data?.githubUrl}
+                      target="_blank"
+                      className="text-secondary-secondary hover:text-primary-lunar-green"
+                    >
                       Github
                     </a>
                   </li>
                   <li>
-                    <a href={data?.linkedinUrl} target="_blank">
+                    <a
+                      href={data?.linkedinUrl}
+                      target="_blank"
+                      className="text-secondary-secondary hover:text-primary-lunar-green"
+                    >
                       Linkedin
                     </a>
                   </li>
