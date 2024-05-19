@@ -13,7 +13,7 @@ export function Router() {
       <Route element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/plants-registration" element={<PlantsRegistration />} />
+        <Route path="/register" element={<PlantsRegistration />} />
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/products" element={<Products />} />
       </Route>
