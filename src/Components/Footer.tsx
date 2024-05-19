@@ -1,4 +1,4 @@
 export function Footer(){
   return  (
-    <h1>header</h1>
+    <h1 className="">header</h1>
   )}

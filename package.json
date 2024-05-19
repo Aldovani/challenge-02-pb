@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.1.0",
+    "@coreui/coreui": "^5.0.1",
+    "@coreui/react": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"

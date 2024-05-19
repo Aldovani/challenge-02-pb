@@ -1,5 +1,6 @@
 import leftPlant from "../assets/leftPlant.png";
 import image23 from "../assets/image23.png";
+import { Button } from "./Button";
 
 const HeroHome = () => {
   return (
@@ -20,12 +21,12 @@ const HeroHome = () => {
             vibrant flowers to lush indoor foliage, allowing you to create your
             very own green oasis.
           </p>
-          <button className="bg-primary-lunar-green text-white py-2 px-8 mt-6 text-sm font-raleway">
-            Shop Now
-          </button>
+            <Button to="/product-list">
+              Shop Now
+            </Button>
           <a
-            href="#"
-            className="relative md:top-36 mt-6 mb-4 text-secondary-secondary text-sm font-raleway block"
+            href="/404"
+            className="cursor-pointer relative md:top-36 mt-6 mb-4 text-secondary-secondary text-sm font-raleway block"
           >
             Learn Gardening →
           </a>

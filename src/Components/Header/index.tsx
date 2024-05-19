@@ -7,7 +7,7 @@ const Header = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/home");
+    navigate("/");
   };
   return (
     <header className="flex justify-between items-center p-2 pl-20 pr-20 bg-athena-grey">
@@ -18,10 +18,10 @@ const Header = () => {
             <ActiveLink to="/">Home</ActiveLink>
           </li>
           <li>
-            <ActiveLink to="/register">Register</ActiveLink>
+            <ActiveLink to="/plants-registration">Register</ActiveLink>
           </li>
           <li>
-            <ActiveLink to="/products">Products</ActiveLink>
+            <ActiveLink to="/product-list">Products</ActiveLink>
           </li>
           <li>
             <ActiveLink to="/about">About us</ActiveLink>

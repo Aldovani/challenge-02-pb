@@ -14,7 +14,7 @@ export function Button({ children, to }: ButtonProps) {
   };
 
   return (
-    <h1 className="text-white w-[190px] h-[60px] flex justify-center items-center bg-primary-lunar-green" onClick={handleClick}>
+    <h1 className="transform transition-transform duration-300 hover:scale-105 cursor-pointer hover:bg-primary-avacado text-white w-[190px] h-[60px] flex justify-center items-center bg-primary-lunar-green" onClick={handleClick}>
       {children}
     </h1>
   );

@@ -13,7 +13,7 @@
       "discountPercentage": 20,
       "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
       "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
-      "imgUrl": "/plant1.png"
+      "imgUrl": "/plant1.jpg"
     },
     {
       "id": "2",
@@ -27,7 +27,7 @@
       "isInSale": false,
       "features": "Species: Monstera deliciosa. Mature Size: Can reach up to 10 feet (3 meters) in height with a spread of 6 feet (2 meters). Light: Prefers bright, indirect light but can tolerate some shade. Watering: Allow the soil to dry out slightly between waterings. Toxicity: Toxic to pets if ingested.",
       "description": "The Monstera Deliciosa, also known as the Swiss Cheese Plant, is a popular indoor plant with large, glossy, heart-shaped leaves. It is native to the tropical forests of southern Mexico and Panama. The plant is characterized by its unique leaf fenestration, giving it the nickname Swiss Cheese Plant.",
-      "imgUrl": "/plant2.png"
+      "imgUrl": "/plant2.jpg"
     },
     {
       "id": "3",
@@ -42,7 +42,7 @@
       "discountPercentage": 10,
       "features": "Species: Sansevieria trifasciata. Mature Size: Typically grows between 2 to 4 feet (60 to 120 cm) in height. Light: Thrives in indirect light but can tolerate low light conditions. Watering: Allow the soil to dry out completely between waterings. Toxicity: Mildly toxic if ingested.",
       "description": "The Snake Plant, also known as Mother-in-Law's Tongue, is a popular indoor plant known for its resilience and air-purifying qualities. It has long, upright leaves that are usually variegated with shades of green, yellow, or white. Snake plants are excellent choices for beginners due to their low maintenance requirements.",
-      "imgUrl": "/plant3.png"
+      "imgUrl": "/plant3.jpg"
     },
     {
       "id": "4",
@@ -56,7 +56,7 @@
       "isInSale": false,
       "features": "Species: Spathiphyllum spp. Mature Size: Typically grows between 1 to 4 feet (30 to 120 cm) in height. Light: Prefers bright, indirect light but can tolerate low light conditions. Watering: Keep soil consistently moist but not waterlogged. Toxicity: Mildly toxic if ingested.",
       "description": "The Peace Lily, also known as Spathiphyllum, is a popular indoor plant valued for its lush green foliage and elegant white flowers. It is native to tropical regions of the Americas and thrives in warm, humid environments. Peace lilies are known for their air-purifying properties and are relatively easy to care for.",
-      "imgUrl": "/plant4.png"
+      "imgUrl": "/plant4.jpg"
     },
     {
       "id": "5",
@@ -71,7 +71,7 @@
       "discountPercentage": 15,
       "features": "Species: Ficus lyrata. Mature Size: Can reach up to 6 feet (180 cm) or more indoors. Light: Requires bright, indirect light. Watering: Allow the soil to dry out slightly between waterings. Toxicity: Mildly toxic if ingested.",
       "description": "The Fiddle Leaf Fig, scientifically known as Ficus lyrata, is a popular indoor tree with large, fiddle-shaped leaves. It is native to western Africa and thrives in warm, humid environments. The plant is prized for its aesthetic appeal and is often used as a statement piece in interior decor.",
-      "imgUrl": "/plant2.png"
+      "imgUrl": "/plant2.jpg"
     }
   ]
 }
