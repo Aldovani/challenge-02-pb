@@ -1,4 +1,5 @@
-export function PlantsRegistration(){
-  return (
-    <h1>PlantsRegistration</h1>
-  )}
+import Form from "../Components/Form";
+
+export function PlantsRegistration() {
+  return <Form />;
+}

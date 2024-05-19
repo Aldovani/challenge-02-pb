@@ -32,10 +32,10 @@ export function Steps({ variant }: StepsProps) {
   const chosenVariant = variants[variant];
 
   return (
-    <div className="justify-center gap-[24px] flex flex-col md:flex-col w-[420px] items-center">
+    <div className="mt-10 justify-center gap-[24px] flex flex-col md:flex-col w-96 items-center lg:mt-0">
       <img src={chosenVariant.imageSrc} alt="" className="w-[72px] h-[72px]" />
       <div className="text-center">
-        <h2 className="text-black text-[24px] font-bold mb-4">{chosenVariant.title}</h2>
+        <h2 className="text-black text-lg md:text-[24px] font-bold mb-4">{chosenVariant.title}</h2>
         <p className="text-secondary-secondary text-base leading-6">{chosenVariant.description}</p>
       </div>
     </div>

@@ -1,8 +1,6 @@
 import { Router } from "./Routes/Router";
 import { BrowserRouter } from "react-router-dom";
 
-//import { ProductList } from "./pages/ProductList";
-
 function App() {
 
  
@@ -15,5 +13,5 @@ function App() {
     </>
   );
 }
-  
+
 export default App;

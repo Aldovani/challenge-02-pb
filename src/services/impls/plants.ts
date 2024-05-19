@@ -1,7 +1,7 @@
 import { IHpptRequest } from "../../types/IHttpRequest";
 import { Plants } from "../../types/Plants";
 import { httpRequest } from "../../utils/httpRequest";
-import { CreatePayload, IPlantsService, options } from "../IPlants";
+import { CreatePayload, IPlantsService, options, Pagination } from "../IPlants";
 
 export class PlantsService implements IPlantsService {
 
@@ -11,11 +11,10 @@ export class PlantsService implements IPlantsService {
     await this.httpRequest.post("/plants", payload);
   }
 
-  async getAll(props?: options): Promise<Plants[]> {
-    const response = await this.httpRequest.get<Plants[]>(
+  async getAll(props?: options): Promise<Pagination<Plants[]>> {
+    const response = await this.httpRequest.get<Pagination<Plants[]>>(
       `/plants?_page=${props?.page || 1}&_per_page=${props?.perPape || 20}`,
     );
-
     return response.data;
   }
 

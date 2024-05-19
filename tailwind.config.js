@@ -26,18 +26,26 @@ export default {
       },
       fontSize: {
         64: "4rem",
-        xl: "3rem",
-        xl2: "2.2rem",
+        'xl': '3rem',
+        'xl2': '2.2rem'
       },
+      boxShadow: {
+        "card-plant": "0px 6.48px 6px 0px rgba(41, 41, 41, 0.08)",
+      },
+
       fontFamily: {
         raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
         "eb-garamond": ["EB Garamond", ...defaultTheme.fontFamily.sans],
         inter: ["Inter", ...defaultTheme.fontFamily.sans],
         pacifico: ["Pacifico", ...defaultTheme.fontFamily.sans],
+        lato: ["Lato", ...defaultTheme.fontFamily.sans],
       },
       filter: {
         "custom-drop-shadow":
           "drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.35))",
+      },
+      backgroundImage: {
+        "footer-image": "url('./assets/bgFooter2.png')",
       },
     },
   },
