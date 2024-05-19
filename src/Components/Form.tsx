@@ -1,24 +1,23 @@
 import { useState, FormEvent } from "react";
+import { Plants } from "../types/Plants";
 import plantImage from "../assets/image23.png";
-
-type FormField =
-  | "plantName"
-  | "plantSubtitle"
-  | "plantType"
-  | "price"
-  | "discount"
-  | "label"
-  | "features"
-  | "description";
-
-type FormErrors = {
-  [key in FormField]?: string;
-};
+import { FormErrors } from "../types/Form";
+import { FormField } from "../types/Form";
+import { httpRequest } from "../utils/httpRequest";
 
 const Form = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [successMessage, setSuccessMessage] = useState<string>("");
   const [selectedLabel, setSelectedLabel] = useState<string>("");
+  const [nextId, setNextId] = useState<number>(6);
+
+  const imageUrls = [
+    "/plant1.png",
+    "/plant2.png",
+    "/plant3.png",
+    "/plant4.png",
+  ];
+  const [imageIndex, setImageIndex] = useState(0);
 
   const formatPrice = (value: string): string => {
     if (!value.startsWith("$")) {
@@ -102,7 +101,7 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -146,9 +145,40 @@ const Form = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      setSuccessMessage("Seu formulário foi registrado com sucesso");
-      form.reset();
-      setSelectedLabel("");
+      const label = formData.get("label") as string;
+      const plantType = formData.get("plantType") as string;
+
+      const newPlant: Plants = {
+        id: nextId,
+        name: formData.get("plantName") as string,
+        subtitle: formData.get("plantSubtitle") as string,
+        label: [label, plantType],
+        price: formData.get("price") as string,
+        isInSale: !!formData.get("discount"),
+        discountPercentage: parseInt(
+          (formData.get("discount") as string).replace("%", ""),
+        ),
+        features: formData.get("features") as string,
+        description: formData.get("description") as string,
+        imgUrl: imageUrls[imageIndex],
+      };
+
+      try {
+        const response = await httpRequest.post<Plants>("/", newPlant);
+
+        if (response.status === 201) {
+          setSuccessMessage("Seu formulário foi registrado com sucesso");
+          form.reset();
+          setSelectedLabel("");
+          setImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
+          setNextId((prevId) => prevId + 1);
+        } else {
+          setSuccessMessage("");
+          console.error("Erro ao enviar dados:", response.data);
+        }
+      } catch (error) {
+        console.error("Erro ao enviar requisição:", error);
+      }
     } else {
       setSuccessMessage("");
     }
