@@ -6,6 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'green-6': '#83E281',
         white: "#FCFCFC",
         "athena-grey": "#F8F9FB",
         wisper: "#F0F1EE",
