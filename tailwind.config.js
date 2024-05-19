@@ -39,10 +39,12 @@ export default {
         pacifico: ["Pacifico", ...defaultTheme.fontFamily.sans],
         lato: ["Lato", ...defaultTheme.fontFamily.sans],
       },
-
       filter: {
         "custom-drop-shadow":
           "drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.35))",
+      },
+      backgroundImage: {
+        "footer-image": "url('./assets/bgFooter2.png')",
       },
     },
   },
