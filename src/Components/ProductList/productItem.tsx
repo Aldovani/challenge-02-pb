@@ -18,7 +18,7 @@ export function ProductItem({ plant }: ItemProps) {
 
   return (
     <Link
-      to={`/product-details/${plant.id}`}
+      to={`/products/${plant.id}`}
       className=" transition-transform hover:scale-105 w-full  bg-white block shadow-card-plant"
     >
       <header>

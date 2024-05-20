@@ -18,7 +18,7 @@ export default function SlideItem({ plant }: SlideItemProps) {
 
   return (
     <Link
-    to={`/plant/${plant.id}`}
+    to={`/products/${plant.id}`}
     className="lg:min-w-[390px] transition-transform hover:scale-105 bg-white block shadow-card-plant"
   >
     <header>
