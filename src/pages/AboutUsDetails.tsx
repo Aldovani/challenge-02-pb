@@ -53,7 +53,7 @@ export function AboutUsDetails() {
                 <h3 className="font-eb-garamond font-medium text-2xl text-dark-gray ">
                   technologies
                 </h3>
-                <ul className="flex gap-5 mt-2 flex-wrap">
+                <ul className="flex gap-x-5 gap-y-2 mt-2 flex-wrap">
                   {data?.technologies.map((tech, index) => (
                     <li
                       key={index}
