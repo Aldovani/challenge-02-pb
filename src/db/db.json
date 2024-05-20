@@ -1,62 +1,297 @@
 {
   "plants": [
     {
-      "id": "1",
-      "name": "Echinocereus Cactus",
-      "subtitle": "A Majestic Addition to Your Plant Collection",
-      "label": ["indoor", "cactus"],
-      "price": "139.99",
-      "isInSale": true,
-      "discountPercentage": 20,
-      "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
-      "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
-      "imgUrl": "/plant1.jpg"
-    },
-    {
       "id": "2",
-      "name": "Monstera Deliciosa",
-      "subtitle": "The Swiss Cheese Plant",
-      "label": ["indoor", "tropical"],
-      "price": "29.99",
-      "isInSale": false,
-      "features": "Species: Monstera deliciosa. Mature Size: Can reach up to 10 feet (3 meters) in height with a spread of 6 feet (2 meters). Light: Prefers bright, indirect light but can tolerate some shade. Watering: Allow the soil to dry out slightly between waterings. Toxicity: Toxic to pets if ingested.",
-      "description": "The Monstera Deliciosa, also known as the Swiss Cheese Plant, is a popular indoor plant with large, glossy, heart-shaped leaves. It is native to the tropical forests of southern Mexico and Panama. The plant is characterized by its unique leaf fenestration, giving it the nickname Swiss Cheese Plant.",
+      "name": "Opuntia Microdasys",
+      "subtitle": "The Bunny Ears Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "49.99",
+      "isInSale": true,
+      "discountPercentage": 15,
+      "features": "Species: Opuntia microdasys. Mature Size: Up to 24 inches (60 cm) in height. Blooming Season: Late spring to early summer. Pot Size: Available in 4-inch and 6-inch pots. Shipping: Shipped with care to ensure safe arrival.",
+      "description": "Bunny ears cactus, also known as polka-dot cactus, is a playful and easy-to-care-for succulent. Requires bright, indirect sunlight and well-drained soil. Handle with care to avoid the small, hair-like glochids.",
       "imgUrl": "/plant2.jpg"
     },
     {
       "id": "3",
-      "name": "Snake Plant",
-      "subtitle": "A Hardy and Low-Maintenance Houseplant",
-      "label": ["indoor", "succulent"],
-      "price": "24.99",
+      "name": "Mammillaria Elongata",
+      "subtitle": "Ladyfinger Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "34.99",
       "isInSale": true,
       "discountPercentage": 10,
-      "features": "Species: Sansevieria trifasciata. Mature Size: Typically grows between 2 to 4 feet (60 to 120 cm) in height. Light: Thrives in indirect light but can tolerate low light conditions. Watering: Allow the soil to dry out completely between waterings. Toxicity: Mildly toxic if ingested.",
-      "description": "The Snake Plant, also known as Mother-in-Law's Tongue, is a popular indoor plant known for its resilience and air-purifying qualities. It has long, upright leaves that are usually variegated with shades of green, yellow, or white. Snake plants are excellent choices for beginners due to their low maintenance requirements.",
+      "features": "Species: Mammillaria elongata. Mature Size: Up to 8 inches (20 cm) in height. Blooming Season: Spring with small, white flowers. Pot Size: Available in 3-inch pots. Shipping: Secure packaging to ensure safe delivery.",
+      "description": "Mammillaria Elongata, also known as ladyfinger cactus, is a charming addition to any cactus collection. Requires minimal watering and well-drained soil. Ideal for bright indoor spots.",
       "imgUrl": "/plant3.jpg"
     },
     {
       "id": "4",
-      "name": "Peace Lily",
-      "subtitle": "An Elegant Flowering Plant",
-      "label": ["indoor", "flowering"],
-      "price": "19.99",
+      "name": "Gymnocalycium Mihanovichii",
+      "subtitle": "Moon Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "29.99",
       "isInSale": false,
-      "features": "Species: Spathiphyllum spp. Mature Size: Typically grows between 1 to 4 feet (30 to 120 cm) in height. Light: Prefers bright, indirect light but can tolerate low light conditions. Watering: Keep soil consistently moist but not waterlogged. Toxicity: Mildly toxic if ingested.",
-      "description": "The Peace Lily, also known as Spathiphyllum, is a popular indoor plant valued for its lush green foliage and elegant white flowers. It is native to tropical regions of the Americas and thrives in warm, humid environments. Peace lilies are known for their air-purifying properties and are relatively easy to care for.",
+      "discountPercentage": 0,
+      "features": "Species: Gymnocalycium mihanovichii. Mature Size: Up to 6 inches (15 cm) in height. Blooming Season: Summer. Pot Size: Available in 4-inch pots. Shipping: Carefully packaged to protect the plant during transit.",
+      "description": "Moon cactus, known for its vibrant, colorful top, thrives in bright, indirect light. Needs well-drained soil and infrequent watering. A popular choice for indoor gardening enthusiasts.",
       "imgUrl": "/plant4.jpg"
     },
     {
       "id": "5",
-      "name": "Fiddle Leaf Fig",
-      "subtitle": "A Statement Plant for Your Home",
-      "label": ["indoor", "tropical"],
-      "price": "49.99",
+      "name": "Astrophytum Asterias",
+      "subtitle": "Star Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "79.99",
+      "isInSale": true,
+      "discountPercentage": 25,
+      "features": "Species: Astrophytum asterias. Mature Size: Up to 3 inches (8 cm) in height. Blooming Season: Spring to early summer. Pot Size: Available in 4-inch pots. Shipping: Shipped with protective packaging to ensure safe arrival.",
+      "description": "Star cactus is a small, spineless cactus with a distinct star-shaped body. Prefers bright light and minimal watering. Perfect for small spaces and windowsills.",
+      "imgUrl": "/plant1.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Echinopsis Pachanoi",
+      "subtitle": "San Pedro Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "59.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Echinopsis pachanoi. Mature Size: Can grow up to 20 feet (6 meters) tall. Blooming Season: Summer, with large white flowers. Pot Size: Available in 6-inch and 8-inch pots. Shipping: Expertly packaged for safe delivery.",
+      "description": "San Pedro cactus is a fast-growing, columnar cactus. Requires full sun and well-drained soil. Ideal for both indoor and outdoor cultivation in suitable climates.",
+      "imgUrl": "/plant2.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Ariocarpus Fissuratus",
+      "subtitle": "Living Rock Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "99.99",
+      "isInSale": true,
+      "discountPercentage": 20,
+      "features": "Species: Ariocarpus fissuratus. Mature Size: Up to 4 inches (10 cm) in diameter. Blooming Season: Fall. Pot Size: Available in 3-inch pots. Shipping: Carefully packed to ensure safe delivery.",
+      "description": "Living rock cactus, known for its unique, rock-like appearance, requires bright light and minimal watering. Perfect for cactus collectors seeking something unusual.",
+      "imgUrl": "/plant3.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Ferocactus Latispinus",
+      "subtitle": "Devil's Tongue Barrel Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "69.99",
       "isInSale": true,
       "discountPercentage": 15,
-      "features": "Species: Ficus lyrata. Mature Size: Can reach up to 6 feet (180 cm) or more indoors. Light: Requires bright, indirect light. Watering: Allow the soil to dry out slightly between waterings. Toxicity: Mildly toxic if ingested.",
-      "description": "The Fiddle Leaf Fig, scientifically known as Ficus lyrata, is a popular indoor tree with large, fiddle-shaped leaves. It is native to western Africa and thrives in warm, humid environments. The plant is prized for its aesthetic appeal and is often used as a statement piece in interior decor.",
+      "features": "Species: Ferocactus latispinus. Mature Size: Up to 12 inches (30 cm) in height. Blooming Season: Winter. Pot Size: Available in 5-inch pots. Shipping: Securely packaged to protect the cactus during transit.",
+      "description": "Devil's tongue barrel cactus is known for its fierce spines and vibrant flowers. Requires full sun and well-drained soil. An impressive addition to any cactus collection.",
+      "imgUrl": "/plant4.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Parodia Magnifica",
+      "subtitle": "Ball Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "39.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": "Species: Parodia magnifica. Mature Size: Up to 8 inches (20 cm) in height. Blooming Season: Summer. Pot Size: Available in 4-inch pots. Shipping: Packaged with care to ensure safe delivery.",
+      "description": "Ball cactus, with its spherical shape and golden spines, is easy to care for. Prefers bright light and minimal watering. Perfect for indoor cactus gardens.",
+      "imgUrl": "/plant1.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Cereus Peruvianus",
+      "subtitle": "Peruvian Apple Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "89.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Cereus peruvianus. Mature Size: Can grow up to 30 feet (9 meters) tall. Blooming Season: Night blooming. Pot Size: Available in 8-inch pots. Shipping: Expertly packaged for safe transit.",
+      "description": "Peruvian apple cactus is a tall, columnar cactus that produces edible fruit. Requires full sun and well-drained soil. Suitable for both indoor and outdoor growing.",
       "imgUrl": "/plant2.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Notocactus Leninghausii",
+      "subtitle": "Golden Ball Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "24.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": "Species: Notocactus leninghausii. Mature Size: Up to 12 inches (30 cm) in height. Blooming Season: Spring. Pot Size: Available in 3-inch and 4-inch pots. Shipping: Packaged securely to ensure safe arrival.",
+      "description": "Golden ball cactus, known for its bright yellow spines, thrives in bright light. Requires minimal watering and well-drained soil. A striking addition to any cactus collection.",
+      "imgUrl": "/plant3.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Myrtillocactus Geometrizans",
+      "subtitle": "Blue Myrtle Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "54.99",
+      "isInSale": true,
+      "discountPercentage": 15,
+      "features": "Species: Myrtillocactus geometrizans. Mature Size: Up to 13 feet (4 meters) tall. Blooming Season: Spring. Pot Size: Available in 6-inch pots. Shipping: Secure packaging to ensure safe delivery.",
+      "description": "Blue myrtle cactus, with its distinctive blue-green color, is a striking and fast-growing cactus. Prefers full sun and minimal watering. Ideal for both indoor and outdoor gardens.",
+      "imgUrl": "/plant4.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Lophophora Williamsii",
+      "subtitle": "Peyote Cactus",
+      "label": ["indoor", "cactus"],
+      "price": "129.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Lophophora williamsii. Mature Size: Up to 3 inches (8 cm) in diameter. Blooming Season: Summer. Pot Size: Available in 3-inch pots. Shipping: Packaged with utmost care for safe arrival.",
+      "description": "Peyote cactus, known for its smooth, spineless body and pink flowers, requires bright light and minimal watering. A unique and rare addition to any collection.",
+      "imgUrl": "/plant1.jpg"
+    },{
+      "id": "13",
+      "name": "Lophophora Williamsii",
+      "subtitle": "Peyote Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "129.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Lophophora williamsii. Mature Size: Up to 3 inches (8 cm) in diameter. Blooming Season: Summer. Pot Size: Available in 3-inch pots. Shipping: Packaged with utmost care for safe arrival.",
+      "description": "Peyote cactus, known for its smooth, spineless body and pink flowers, requires bright light and minimal watering. A unique and rare addition to any collection.",
+      "imgUrl": "/plant2.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Echinocactus Grusonii",
+      "subtitle": "Golden Barrel Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "74.99",
+      "isInSale": true,
+      "discountPercentage": 20,
+      "features": "Species: Echinocactus grusonii. Mature Size: Up to 3 feet (90 cm) in height and diameter. Blooming Season: Summer. Pot Size: Available in 6-inch and 8-inch pots. Shipping: Carefully packaged to ensure safe delivery.",
+      "description": "Golden barrel cactus, with its iconic round shape and bright yellow spines, is a must-have for cactus lovers. Requires full sun and well-drained soil.",
+      "imgUrl": "/plant3.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Stenocereus Thurberi",
+      "subtitle": "Organ Pipe Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "99.99",
+      "isInSale": true,
+      "discountPercentage": 15,
+      "features": "Species: Stenocereus thurberi. Mature Size: Up to 26 feet (8 meters) tall. Blooming Season: Summer. Pot Size: Available in 8-inch pots. Shipping: Expertly packaged for safe transit.",
+      "description": "Organ pipe cactus is known for its tall, columnar growth and night-blooming flowers. Requires full sun and well-drained soil. Suitable for indoor and outdoor growth.",
+      "imgUrl": "/plant4.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Pachycereus Marginatus",
+      "subtitle": "Mexican Fence Post Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "64.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Pachycereus marginatus. Mature Size: Up to 20 feet (6 meters) tall. Blooming Season: Spring. Pot Size: Available in 6-inch and 8-inch pots. Shipping: Securely packaged to ensure safe arrival.",
+      "description": "Mexican fence post cactus is a tall, columnar cactus ideal for creating natural barriers. Requires full sun and minimal watering. Perfect for indoor and outdoor use.",
+      "imgUrl": "/plant1.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Cleistocactus Strausii",
+      "subtitle": "Silver Torch Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "44.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": "Species: Cleistocactus strausii. Mature Size: Up to 10 feet (3 meters) tall. Blooming Season: Summer. Pot Size: Available in 6-inch pots. Shipping: Packaged with care to ensure safe delivery.",
+      "description": "Silver torch cactus, known for its silvery spines and tall, slender growth, requires bright light and minimal watering. An eye-catching addition to any cactus collection.",
+      "imgUrl": "/plant2.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Espostoa Lanata",
+      "subtitle": "Peruvian Old Man Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "74.99",
+      "isInSale": true,
+      "discountPercentage": 15,
+      "features": "Species: Espostoa lanata. Mature Size: Up to 8 feet (2.5 meters) tall. Blooming Season: Spring. Pot Size: Available in 6-inch pots. Shipping: Securely packaged for safe delivery.",
+      "description": "Peruvian old man cactus is known for its white, woolly appearance. Requires full sun and well-drained soil. A unique and attractive addition to any cactus collection.",
+      "imgUrl": "/plant3.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Acanthocereus Tetragonus",
+      "subtitle": "Fairy Castle Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "34.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": "Species: Acanthocereus tetragonus. Mature Size: Up to 6 feet (1.8 meters) tall. Blooming Season: Rarely blooms indoors. Pot Size: Available in 4-inch and 6-inch pots. Shipping: Packaged securely to ensure safe arrival.",
+      "description": "Fairy castle cactus, with its whimsical, castle-like structure, requires bright light and minimal watering. A favorite among indoor cactus enthusiasts.",
+      "imgUrl": "/plant4.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Echinopsis Subdenudata",
+      "subtitle": "Easter Lily Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "39.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": "Species: Echinopsis subdenudata. Mature Size: Up to 6 inches (15 cm) in height. Blooming Season: Spring and summer. Pot Size: Available in 4-inch pots. Shipping: Carefully packaged to ensure safe delivery.",
+      "description": "Easter lily cactus is known for its large, white, fragrant flowers. Requires bright light and well-drained soil. A beautiful and fragrant addition to any cactus collection.",
+      "imgUrl": "/plant1.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Astrophytum Myriostigma",
+      "subtitle": "Bishop's Cap Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "69.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Astrophytum myriostigma. Mature Size: Up to 12 inches (30 cm) in height. Blooming Season: Spring. Pot Size: Available in 6-inch pots. Shipping: Securely packaged for safe delivery.",
+      "description": "Bishop's cap cactus is a spineless cactus with a distinctive, star-shaped body. Requires bright light and minimal watering. A unique addition to any cactus collection.",
+      "imgUrl": "/plant2.jpg"
+    },
+    {
+      "id": "22",
+      "name": "Mammillaria Bombycina",
+      "subtitle": "Silken Pincushion Cactus",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": "29.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": "Species: Mammillaria bombycina. Mature Size: Up to 6 inches (15 cm) in height. Blooming Season: Spring and summer. Pot Size: Available in 4-inch pots. Shipping: Packaged securely to ensure safe arrival.",
+      "description": "Silken pincushion cactus, with its soft, hair-like spines, requires bright light and minimal watering. Perfect for small spaces and indoor cactus gardens.",
+      "imgUrl": "/plant22.jpg"
     }
   ]
 }
