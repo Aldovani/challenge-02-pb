@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 const HeroHome = () => {
   return (
-    <div className="bg-wisper pl-20 pb-40 relative">
+    <div className="bg-wisper px-10 sm:pl-20 pb-40 relative">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <section className="max-w-xl relative mt-20">
           <div className="flex items-center mb-5">
@@ -21,9 +21,7 @@ const HeroHome = () => {
             vibrant flowers to lush indoor foliage, allowing you to create your
             very own green oasis.
           </p>
-            <Button to="/products">
-              Shop Now
-            </Button>
+          <Button to="/products">Shop Now</Button>
           <a
             href="/404"
             className="cursor-pointer relative md:top-36 mt-6 mb-4 text-secondary-secondary text-sm font-raleway block"
