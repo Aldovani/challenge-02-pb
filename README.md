@@ -27,7 +27,7 @@ Rode o comando abaixo para abrir o projeto em sua máquina
 npm run dev
 ```
 
-## Apresentação
+## Apresentação 🎬
 ### Sign-In
 ![SingIn](https://github.com/Aldovani/challenge-02-pb/assets/165194563/d57cbd7c-db9b-4584-8d94-4cbe4c5c47a2)
 
@@ -64,4 +64,4 @@ https://github.com/Aldovani/challenge-02-pb/assets/165194563/d0bbece3-4062-4c35-
 ### [Beatriz Zanchin Messias](https://github.com/Biazanchin)
 ### [Camila Marques de Paula](https://github.com/itsmecamila)
 ### [Everton Ceciliano De Souza](https://github.com/EvertonCeciliano)
-### [Talita Berjas Favore](https://github.com/itsmecamila)
+### [Talita Berjas Favore](https://github.com/TalitaFavore)
