@@ -138,7 +138,7 @@ const Form = () => {
         name: formData.get("plantName") as string,
         subtitle: formData.get("plantSubtitle") as string,
         label: [label, plantType],
-        price: formData.get("price") as string,
+        price: (formData.get("price") as string).replace("$", ""),
         isInSale: !!formData.get("discount"),
         discountPercentage: parseInt(
           (formData.get("discount") as string).replace("%", ""),
