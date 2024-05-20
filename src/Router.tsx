@@ -6,12 +6,15 @@ import { ProductDetails } from "./pages/ProductsDetails";
 import { ProductList } from "./pages/ProductList";
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { NotFound } from "./pages/NotFound";
-export function Router(){
+import { AboutUsDetails } from "./pages/AboutUsDetails";
+
+export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout/>}>
+      <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/about/:name" element={<AboutUsDetails />} />
         <Route path="/plants-registration" element={<PlantsRegistration />} />
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/product-list" element={<ProductList />} />

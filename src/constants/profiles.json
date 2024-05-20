@@ -1,0 +1,109 @@
+[
+  {
+    "imageUrl": "https://cdn.discordapp.com/attachments/817522036054032414/1241923032616800256/mob.png?ex=664bf674&is=664aa4f4&hm=f2e2d7e530058544740bec545543cbdcd2af3c9c5c032dad8db5047678385c85&",
+    "about": "I live in São Paulo, Brazil, and I'm 20 years old. I'm studying Analysis and Systems Development at FATEC Taquaritinga. Every day, I dive deeper into the world of technology, learning how to build systems and solve challenges. I'm excited to explore all the possibilities of this exciting field!",
+    "name": "Aldovani Henrique",
+    "technologies": [
+      "Html",
+      "Tailwind",
+      "Typescript",
+      "javascript",
+      "node",
+      "react"
+    ],
+    "hobbies": [
+      "I enjoy watching anime and reading manga.",
+      "I like playing video games.",
+      "I enjoy watching e-sports.",
+      "I like programming."
+    ],
+    "linkedinUrl": "https://linkedin.com/in/aldovani",
+    "githubUrl": "https://github.com/aldovani",
+    "slug": "aldovani",
+    "role": "FullStack"
+  },
+  {
+    "imageUrl": "https://cdn.discordapp.com/attachments/817522036054032414/1241919433321087006/WhatsApp_Image_2024-05-19_at_21.32.34_02fe45ef.jpg?ex=664bf31a&is=664aa19a&hm=42beb6d0660e676f38ecddbe85b9adba42a333e6c5d308229eef635fbc4e8fb6&",
+    "about": "My name is Beatriz, I'm 19 years old, and I'm currently studying Systems Analysis and Development. My love for technology began in high school, and since then, I have been improving in this field, specifically in Front-End development.",
+    "name": "Beatriz Zanchin Messias",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "hobbies": ["Reading", "Dancing.", "Listening to music.", "studying."],
+    "linkedinUrl": " https://www.linkedin.com/in/beatriz-zanchin-messias-22356a303",
+    "githubUrl": "https://github.com/Biazanchin",
+    "slug": "beatriz",
+    "role": "Front-end"
+  },
+  {
+    "imageUrl": "https://cdn.discordapp.com/attachments/1222263756827000987/1241847092666695831/blue-period-ep-2-mori-senpai-goddess-of-art-crying.png?ex=664bafbb&is=664a5e3b&hm=2d34dd743444dedc61408cc6b2e823fb859c78c0bf3ff4408982f9d33e8012b6&",
+    "about": "My name is Camila and I'm twenty years old. I was born and raised in Presidente Prudente, where I still live now, and I will finish my degree in Systems Analysis and Development in less than a month.",
+    "name": "Camila Marques de paula",
+    "technologies": [
+      "C#",
+      "Python",
+      "PHP",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "React",
+      "React Native",
+      "MongoDB",
+      "MySQL",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "TailwindCss",
+      "Git",
+      "GitHub"
+    ],
+    "hobbies": [
+      "Writing",
+      "Photography",
+      "Painting",
+      "Cooking",
+      "Singing & Music",
+      "Crocheting",
+      "Reading",
+      "K-dramas",
+      "Studying the English Language",
+      " Watching C-dramas, K-dramas and some Anime"
+    ],
+    "linkedinUrl": "https://www.linkedin.com/in/camilamarquesdepaula",
+    "githubUrl": "https://github.com/itsmecamila",
+    "slug": "camila",
+    "role": "Front-end"
+  },
+  {
+    "imageUrl": "https://s3-alpha-sig.figma.com/img/caec/5981/f3de17f1f29ae9f679f85cadda06f1f1?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XnuT3WxbNbVx5YUbshV-b-j2tozuuc-vBA2VQP7HQOjxzcKSk~E4RctFVGmEmkuIYWVIhgSlfciRkMhg5n0XeeiPdOu7yhkne1DuuJLhhct7KJfgv9x~g56c3PC0Om~43ytl4ww0zksGHQD85A8MRQyjEYrtt8SR3XXaID5mWC2ZLpgPd9ZnNJ1uG32zP1LyumpGjIref4JlC-Oxs3L4wZjRDnaJ6Sg1BPl32QbEMKhS6SJHLEDtMW57Zlk2h59reCBDUbKzvZmIXNEhVRe2B0GgVVeZAOwKSF3UT8TXSaRzSjFOQ~M1LmyDI~Kdtoeej4Mdfkv3NYTGxWN3W5VSBg__",
+    "about": "Passionate software developer currently pursuing a degree in Analysis and Systems Development. Throughout my studies, I've delved into JavaScript frameworks and libraries, specializing in web development, particularly in Reactjs. I stand out for my versatility, teamwork skills, and effective communication",
+    "name": "Everton Ceciliano",
+    "technologies": ["ReactJs", "Javascript"],
+    "hobbies": [
+      "I love studying programming because it helps me grow personally and professionally.",
+      "I also train at the gym to take care of my health and stay in shape.",
+      "I'm a die-hard Corinthians fan; it's my favorite team! Watching the games and following football is a passion I never lose!"
+    ],
+    "linkedinUrl": "https://www.linkedin.com/in/evertonceciliano",
+    "githubUrl": "https://github.com/EvertonCeciliano",
+    "slug": "everton",
+    "role": "Front-end"
+  },
+  {
+    "imageUrl": "https://images.adagio.com/images2/custom_blends/191021.jpg",
+    "about": " Front-end developer intern at Compass UOL.  Nineteen years old, studying the 5th semester of systems analysis and development",
+    "name": "Talita Favore",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "JavaScript",
+      "React",
+      "TypeScript"
+    ],
+    "hobbies": ["Books", "Bakery", "K-dramas", "Learning Languages", "Music"],
+    "linkedinUrl": "https://www.linkedin.com/in/talita-favore",
+    "githubUrl": "https://github.com/TalitaFavore",
+    "slug": "talita",
+    "role": "Front-end"
+  }
+]
