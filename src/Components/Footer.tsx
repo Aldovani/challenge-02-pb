@@ -4,7 +4,7 @@ import logo from "../assets/logo2.svg";
 const Footer = () => {
   return (
     <footer
-      className={`font-raleway text-xs bg-primary-lunar-green bg-footer-image text-white pb-14`}
+      className={`font-raleway text-xs bg-primary-lunar-green bg-opacity-[0.6] mix-blend-multiply  bg-footer-image text-white pb-14`}
     >
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row  justify-center items-center md:justify-between p-2 pl-20 pr-20">
@@ -25,11 +25,11 @@ const Footer = () => {
                 </li>
                 <li className="font-thin pb-2 hover:text-primary-accent">
                   {" "}
-                  <Link to="*">Products</Link>
+                  <Link to="/products">Products</Link>
                 </li>
                 <li className="font-thin hover:text-primary-accent">
                   {" "}
-                  <Link to="*">Blogs</Link>
+                  <Link to="/blog">Blogs</Link>
                 </li>
               </ul>
             </div>
@@ -43,11 +43,11 @@ const Footer = () => {
                 </li>
                 <li className="font-thin pb-2 hover:text-primary-accent">
                   {" "}
-                  <Link to="*">Products</Link>
+                  <Link to="/products">Products</Link>
                 </li>
                 <li className="font-thin hover:text-primary-accent">
                   {" "}
-                  <Link to="*">Blogs</Link>
+                  <Link to="/blog">Blogs</Link>
                 </li>
               </ul>
             </div>
