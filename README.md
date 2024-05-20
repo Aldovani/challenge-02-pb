@@ -12,7 +12,7 @@ Faça o clone do projeto através do terminal de sua IDE de preferência
 git clone https://github.com/Aldovani/challenge-02-pb.git .
 ```
 
-No arquivo .env.example usamos a seguinte chave para o Clerk
+Crie um arquivo .env no diretório e utilize a seguinte chave para o Clerk
 ```bash
 VITE_CLERK_PUBLISHABLE_KEY=pk_test_Y2xhc3NpYy1odXNreS0xOC5jbGVyay5hY2NvdW50cy5kZXYk
 ```
