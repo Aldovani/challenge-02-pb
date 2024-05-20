@@ -9,7 +9,7 @@ export default function Index() {
   const [plants, setPlants] = useState<Plants[]>([]);
 
   useEffect(() => {
-    plantsService.getAll().then((data) => setPlants(data.data));
+    plantsService.getAll({ perPape: 40 }).then((data) => setPlants(data.data));
   }, []);
 
   return (
@@ -23,24 +23,24 @@ export default function Index() {
 
           <div className="mt-[96px] lg:ml-[100px]">
             <Splide
-           options={{
-            gap: "2rem",
-            perPage: 3,
-            perMove: 1,
-            arrows: false,
-            pagination: false,
-            breakpoints: {
-              1200: {
-                perPage: 2,
-              },
-              620: {
-                perPage: 1,
-              },
-              420: {
-                width: "320px",
-              },
-            },
-          }}
+              options={{
+                gap: "2rem",
+                perPage: 3,
+                perMove: 1,
+                arrows: false,
+                pagination: false,
+                breakpoints: {
+                  1200: {
+                    perPage: 2,
+                  },
+                  620: {
+                    perPage: 1,
+                  },
+                  420: {
+                    width: "320px",
+                  },
+                },
+              }}
             >
               {plants
                 .filter((e) => !e.discountPercentage)
@@ -60,24 +60,24 @@ export default function Index() {
 
           <div className="mt-[96px] lg:ml-[100px]">
             <Splide
-          options={{
-            gap: "2rem",
-            perPage: 3,
-            perMove: 1,
-            arrows: false,
-            pagination: false,
-            breakpoints: {
-              1200: {
-                perPage: 2,
-              },
-              620: {
-                perPage: 1,
-              },
-              420: {
-                width: "320px",
-              },
-            },
-          }}
+              options={{
+                gap: "2rem",
+                perPage: 3,
+                perMove: 1,
+                arrows: false,
+                pagination: false,
+                breakpoints: {
+                  1200: {
+                    perPage: 2,
+                  },
+                  620: {
+                    perPage: 1,
+                  },
+                  420: {
+                    width: "320px",
+                  },
+                },
+              }}
             >
               {plants
                 .filter((e) => e.discountPercentage > 0)
