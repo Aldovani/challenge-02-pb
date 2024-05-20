@@ -1,4 +1,5 @@
 import logo from "../assets/logo2.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -41,13 +42,39 @@ const Footer = () => {
 
         <div className="flex justify-between p-4 pl-10 pr-10 md:pl-20 md:pr-20 ">
           <div>
-            <img src={logo} alt="Exemplo" />
+            <ul>
+              <li className="font-bold text-lg pb-4">Links</li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="/about">About us</Link></li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="*">Products</Link></li>
+              <li className="font-thin hover:text-primary-accent"> <Link to="*">Blogs</Link></li>
+            </ul>
           </div>
 
-          <div className="font-thin flex flex-col justify-center items-center w-30 ">
-            <p>Compassinhos ®. All rights</p>
-            <p>reserved.</p>
+          <div >
+            <ul>
+              <li className="font-bold text-lg pb-4">Comunity</li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="/about">About us</Link></li>
+              <li className="font-thin pb-2 hover:text-primary-accent"> <Link to="*">Products</Link></li>
+              <li className="font-thin hover:text-primary-accent"> <Link to="*">Blogs</Link></li>
+            </ul>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-20 ml-10 mr-10 md:mt-24 md:ml-20 md:mr-20">
+        <hr className="border-primary-accent" />
+      </div>
+
+      <div className="flex justify-between p-4 pl-10 pr-10 md:pl-20 md:pr-20 ">
+        <div>
+        <Link to="/">
+            <img src={logo} alt="Logo da Plant Pace" className="cursor-pointer"/>
+          </Link>
+        </div>
+
+        <div className="font-thin flex flex-col justify-center items-center w-30 ">
+          <p>Compassinhos ®. All rights</p>
+          <p>reserved.</p>
         </div>
       </div>
     </footer>
