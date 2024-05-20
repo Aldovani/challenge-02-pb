@@ -143,14 +143,12 @@
       "features": "Species: Lophophora williamsii. Mature Size: Up to 3 inches (8 cm) in diameter. Blooming Season: Summer. Pot Size: Available in 3-inch pots. Shipping: Packaged with utmost care for safe arrival.",
       "description": "Peyote cactus, known for its smooth, spineless body and pink flowers, requires bright light and minimal watering. A unique and rare addition to any collection.",
       "imgUrl": "/plant1.jpg"
-    },{
+    },
+    {
       "id": "13",
       "name": "Lophophora Williamsii",
       "subtitle": "Peyote Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "129.99",
       "isInSale": false,
       "discountPercentage": 0,
@@ -162,10 +160,7 @@
       "id": "14",
       "name": "Echinocactus Grusonii",
       "subtitle": "Golden Barrel Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "74.99",
       "isInSale": true,
       "discountPercentage": 20,
@@ -177,10 +172,7 @@
       "id": "15",
       "name": "Stenocereus Thurberi",
       "subtitle": "Organ Pipe Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "99.99",
       "isInSale": true,
       "discountPercentage": 15,
@@ -192,10 +184,7 @@
       "id": "16",
       "name": "Pachycereus Marginatus",
       "subtitle": "Mexican Fence Post Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "64.99",
       "isInSale": false,
       "discountPercentage": 0,
@@ -207,10 +196,7 @@
       "id": "17",
       "name": "Cleistocactus Strausii",
       "subtitle": "Silver Torch Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "44.99",
       "isInSale": true,
       "discountPercentage": 10,
@@ -222,10 +208,7 @@
       "id": "18",
       "name": "Espostoa Lanata",
       "subtitle": "Peruvian Old Man Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "74.99",
       "isInSale": true,
       "discountPercentage": 15,
@@ -237,10 +220,7 @@
       "id": "19",
       "name": "Acanthocereus Tetragonus",
       "subtitle": "Fairy Castle Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "34.99",
       "isInSale": true,
       "discountPercentage": 10,
@@ -252,10 +232,7 @@
       "id": "20",
       "name": "Echinopsis Subdenudata",
       "subtitle": "Easter Lily Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "39.99",
       "isInSale": true,
       "discountPercentage": 10,
@@ -267,10 +244,7 @@
       "id": "21",
       "name": "Astrophytum Myriostigma",
       "subtitle": "Bishop's Cap Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "69.99",
       "isInSale": false,
       "discountPercentage": 0,
@@ -282,16 +256,13 @@
       "id": "22",
       "name": "Mammillaria Bombycina",
       "subtitle": "Silken Pincushion Cactus",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
+      "label": ["indoor", "cactus"],
       "price": "29.99",
       "isInSale": true,
       "discountPercentage": 10,
       "features": "Species: Mammillaria bombycina. Mature Size: Up to 6 inches (15 cm) in height. Blooming Season: Spring and summer. Pot Size: Available in 4-inch pots. Shipping: Packaged securely to ensure safe arrival.",
       "description": "Silken pincushion cactus, with its soft, hair-like spines, requires bright light and minimal watering. Perfect for small spaces and indoor cactus gardens.",
-      "imgUrl": "/plant22.jpg"
+      "imgUrl": "/plant3.jpg"
     }
   ]
 }
