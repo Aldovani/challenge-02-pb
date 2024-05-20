@@ -26,5 +26,5 @@ export type CreateResponse = {
 export interface IPlantsService {
   create(payload: CreatePayload): Promise<CreateResponse>;
   getAll(option: options): Promise<Pagination<Plants[]>>;
-  findById(id: number): Promise<Plants | null>;
+  findById(id: string): Promise<Plants | null>;
 }

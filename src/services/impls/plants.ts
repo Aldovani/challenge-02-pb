@@ -19,7 +19,7 @@ export class PlantsService implements IPlantsService {
     return response.data;
   }
 
-  async findById(id: number): Promise<Plants | null> {
+  async findById(id: string): Promise<Plants | null> {
     const response = await this.httpRequest.get<Plants | null>(`/plants/${id}`);
 
     return response.data;
