@@ -24,7 +24,7 @@ const HeroHome = () => {
           <Button to="/products">Shop Now</Button>
           <a
             href="/404"
-            className="cursor-pointer relative md:top-36 mt-6 mb-4 text-secondary-secondary text-sm font-raleway block"
+            className="hover:text-primary-lunar-green  cursor-pointer relative md:top-36 mt-6 mb-4 text-secondary-secondary text-sm font-raleway block"
           >
             Learn Gardening →
           </a>
@@ -33,7 +33,7 @@ const HeroHome = () => {
           <img
             src={leftPlant}
             alt="Left Plant"
-            className="absolute left-0 -bottom-32 w-48 mix-blend-luminosity hidden lg:block"
+            className="pointer-events-none absolute left-0 -bottom-32 w-48 mix-blend-luminosity hidden lg:block"
           />
         </section>
         <section>
