@@ -152,15 +152,15 @@ const Form = () => {
         const { status, data } = await plantsService.create(newPlant);
 
         if (status === 201) {
-          setSuccessMessage("Seu formulário foi registrado com sucesso");
+          setSuccessMessage("Your plant has been registered successfully");
           form.reset();
           setSelectedLabel("");
         } else {
           setSuccessMessage("");
-          console.error("Erro ao enviar dados:", data);
+          console.error("Error sending data:", data);
         }
       } catch (error) {
-        console.error("Erro ao enviar requisição:", error);
+        console.error("Error sending request:", error);
       }
     } else {
       setSuccessMessage("");
