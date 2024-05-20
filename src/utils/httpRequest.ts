@@ -1,9 +1,18 @@
-import { bodyType, httpResponse, IHpptRequest, requestOptions } from "../types/IHttpRequest";
+import {
+  bodyType,
+  httpResponse,
+  IHpptRequest,
+  requestOptions,
+} from "../types/IHttpRequest";
 
 export class HttpRequest implements IHpptRequest {
   private baseUrl = "http://localhost:3000";
 
-  async request<T>({ body, path, method }: requestOptions):Promise<httpResponse<T>> {
+  async request<T>({
+    body,
+    path,
+    method,
+  }: requestOptions): Promise<httpResponse<T>> {
     let bodyParsed: undefined | string;
 
     if (body) {
@@ -15,9 +24,8 @@ export class HttpRequest implements IHpptRequest {
       method,
     });
 
-      const data = await request.json();
-      return {data:data,status:request.status}
-
+    const data = await request.json();
+    return { data: data, status: request.status };
   }
 
   async get<T>(path: string) {

@@ -1,19 +1,9 @@
 import { useState, FormEvent } from "react";
+import { Plants } from "../types/Plants";
 import plantImage from "../assets/image23.png";
-
-type FormField =
-  | "plantName"
-  | "plantSubtitle"
-  | "plantType"
-  | "price"
-  | "discount"
-  | "label"
-  | "features"
-  | "description";
-
-type FormErrors = {
-  [key in FormField]?: string;
-};
+import { FormErrors } from "../types/Form";
+import { FormField } from "../types/Form";
+import { plantsService } from "../services/impls/plants";
 
 const Form = () => {
   const [errors, setErrors] = useState<FormErrors>({});
@@ -102,7 +92,7 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -124,13 +114,8 @@ const Form = () => {
     }
 
     const discount = formData.get("discount");
-    if (
-      (discount && !/^(\d{1,3})%?$/.test(discount as string)) ||
-      discount === "0%"
-    ) {
+    if (discount === "0%") {
       newErrors.discount = "Please enter a valid discount percentage";
-    } else if (discount && parseFloat(discount as string) > 100) {
-      newErrors.discount = "Discount percentage cannot exceed 100%";
     }
 
     if (!formData.get("label")) {
@@ -146,9 +131,37 @@ const Form = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      setSuccessMessage("Seu formulário foi registrado com sucesso");
-      form.reset();
-      setSelectedLabel("");
+      const label = formData.get("label") as string;
+      const plantType = formData.get("plantType") as string;
+
+      const newPlant: Omit<Plants, "id"> = {
+        name: formData.get("plantName") as string,
+        subtitle: formData.get("plantSubtitle") as string,
+        label: [label, plantType],
+        price: (formData.get("price") as string).replace("$", ""),
+        isInSale: !!formData.get("discount"),
+        discountPercentage: parseInt(
+          (formData.get("discount") as string).replace("%", ""),
+        ),
+        features: formData.get("features") as string,
+        description: formData.get("description") as string,
+        imgUrl: "/plant4.jpg",
+      };
+
+      try {
+        const { status, data } = await plantsService.create(newPlant);
+
+        if (status === 201) {
+          setSuccessMessage("Seu formulário foi registrado com sucesso");
+          form.reset();
+          setSelectedLabel("");
+        } else {
+          setSuccessMessage("");
+          console.error("Erro ao enviar dados:", data);
+        }
+      } catch (error) {
+        console.error("Erro ao enviar requisição:", error);
+      }
     } else {
       setSuccessMessage("");
     }

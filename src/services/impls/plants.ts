@@ -1,14 +1,15 @@
 import { IHpptRequest } from "../../types/IHttpRequest";
 import { Plants } from "../../types/Plants";
 import { httpRequest } from "../../utils/httpRequest";
-import { CreatePayload, IPlantsService, options, Pagination } from "../IPlants";
+import { CreatePayload, IPlantsService,CreateResponse, options, Pagination } from "../IPlants";
 
 export class PlantsService implements IPlantsService {
 
   constructor(private httpRequest:IHpptRequest ){}
 
-  async create(payload: CreatePayload): Promise<void> {
-    await this.httpRequest.post("/plants", payload);
+  async create(payload: CreatePayload): Promise< CreateResponse> {
+ const response=    await this.httpRequest.post<Plants>("/plants", payload);
+  return response
   }
 
   async getAll(props?: options): Promise<Pagination<Plants[]>> {
