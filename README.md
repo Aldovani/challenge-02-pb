@@ -1,8 +1,8 @@
 <img src="./.github/preview.png"/>
 
 # 🌱 plantPeace
-O plantPeace é um site de plantas fictícias, nele você encontra 4 páginas, home, register, products e about us, todas seguindo os designs e requisitos dados no [Notion](https://dramatic-water-ade.notion.site/Desafio-2-Semana-8-956e3babfbc04f9aa29dde186cddaba5). Sendo que, a página Home é a página inicial após o login, a página Register é onde você cadastra uma planta para aparecer como um produto no site nas páginas Home e Products e a página About Us diz um pouco sobre cada desenvolvedor do projeto. Durante a criação do site foi utilizado o [trello](https://trello.com/b/93wJ5xlD/challenge-02-pb) para melhor organização da equipe.
-## Requisitos
+O plantPeace é um site de plantas fictícias, nele você encontra 4 páginas: Home, Register, Products e About Us, todas seguindo os designs e requisitos dados no [Notion](https://dramatic-water-ade.notion.site/Desafio-2-Semana-8-956e3babfbc04f9aa29dde186cddaba5). A página Home é a página inicial após o login, a página Register é onde você cadastra uma planta para aparecer como um produto no site nas páginas Home e Products. A página About Us conta um pouco sobre cada desenvolvedor do projeto. Durante a criação do site, foi utilizado o  [Trello](https://trello.com/b/93wJ5xlD/challenge-02-pb) para melhor organização da equipe.
+
 
 ### Os requistos OBRIGATÓRIOS eram:
 - [x] Utilize TypeScript para tipagem;
