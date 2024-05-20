@@ -1,12 +1,12 @@
 # plantPeace 🌱 
 O plantPeace é um site de plantas fictícias, nele você encontra 4 páginas, home, register, products e about us, todas seguindo os designs e requisitos dados no [Notion](https://dramatic-water-ade.notion.site/Desafio-2-Semana-8-956e3babfbc04f9aa29dde186ddaba5). Sendo que, a página Home é a página inicial após o login, a página Register é onde você cadastra uma planta para aparecer como um produto no site nas páginas Home e Products e a página About Us diz um pouco sobre cada desenvolvedor do projeto. Durante a criação do site foi utilizado o [trello](https://trello.com/b/93wJ5xlD/challenge-02-pb) para melhor organização da equipe.
 
-## Tecnologias
+## Tecnologias 💻
 * React
 * TypeScript
 * Tailwind CSS
 
-## Instalação
+## Instalação ⚙️
 Faça o clone do projeto através do terminal de sua IDE de preferência
 ```bash
 git clone https://github.com/Aldovani/challenge-02-pb.git .
@@ -28,7 +28,7 @@ npm run dev
 ```
 
 ## Apresentação
-### Sing-In
+### Sign-In
 ![SingIn](https://github.com/Aldovani/challenge-02-pb/assets/165194563/d57cbd7c-db9b-4584-8d94-4cbe4c5c47a2)
 
 
@@ -42,6 +42,9 @@ https://github.com/Aldovani/challenge-02-pb/assets/165194563/7309966a-1c91-4158-
 
 ### Register
 ![Register](https://github.com/Aldovani/challenge-02-pb/assets/165194563/7171a751-6f30-41ba-a30d-02660b4c7a9c)
+
+### Product Page
+![ProductPage](https://github.com/Aldovani/challenge-02-pb/assets/165194563/9c759d8e-be84-4404-bbf8-cdbf2dcde94e)
 
 
 ### Products
