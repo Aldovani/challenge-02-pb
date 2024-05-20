@@ -15,7 +15,6 @@
       "I enjoy watching anime and reading manga.",
       "I like playing video games.",
       "I enjoy watching e-sports.",
-      "I enjoy watching e-sports.",
       "I like programming."
     ],
     "linkedinUrl": "https://linkedin.com/in/aldovani",
@@ -35,6 +34,46 @@
     "role": "Front-end"
   },
   {
+    "imageUrl": "https://cdn.discordapp.com/attachments/1222263756827000987/1241847092666695831/blue-period-ep-2-mori-senpai-goddess-of-art-crying.png?ex=664bafbb&is=664a5e3b&hm=2d34dd743444dedc61408cc6b2e823fb859c78c0bf3ff4408982f9d33e8012b6&",
+    "about": "My name is Camila and I'm twenty years old. I was born and raised in Presidente Prudente, where I still live now, and I will finish my degree in Systems Analysis and Development in less than a month.",
+    "name": "Camila Marques de paula",
+    "technologies": [
+      "C#",
+      "Python",
+      "PHP",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "React",
+      "React Native",
+      "MongoDB",
+      "MySQL",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "TailwindCss",
+      "Git",
+      "GitHub"
+    ],
+    "hobbies": [
+      "Writing",
+      "Photography",
+      "Painting",
+      "Cooking",
+      "Singing & Music",
+      "Crocheting",
+      "Reading",
+      "K-dramas",
+      "Studying the English Language",
+      " Watching C-dramas, K-dramas and some Anime"
+    ],
+    "linkedinUrl": "https://www.linkedin.com/in/camilamarquesdepaula",
+    "githubUrl": "https://github.com/itsmecamila",
+    "slug": "camila",
+    "role": "Front-end"
+  },
+  {
     "imageUrl": "https://s3-alpha-sig.figma.com/img/caec/5981/f3de17f1f29ae9f679f85cadda06f1f1?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XnuT3WxbNbVx5YUbshV-b-j2tozuuc-vBA2VQP7HQOjxzcKSk~E4RctFVGmEmkuIYWVIhgSlfciRkMhg5n0XeeiPdOu7yhkne1DuuJLhhct7KJfgv9x~g56c3PC0Om~43ytl4ww0zksGHQD85A8MRQyjEYrtt8SR3XXaID5mWC2ZLpgPd9ZnNJ1uG32zP1LyumpGjIref4JlC-Oxs3L4wZjRDnaJ6Sg1BPl32QbEMKhS6SJHLEDtMW57Zlk2h59reCBDUbKzvZmIXNEhVRe2B0GgVVeZAOwKSF3UT8TXSaRzSjFOQ~M1LmyDI~Kdtoeej4Mdfkv3NYTGxWN3W5VSBg__",
     "about": "Passionate software developer currently pursuing a degree in Analysis and Systems Development. Throughout my studies, I've delved into JavaScript frameworks and libraries, specializing in web development, particularly in Reactjs. I stand out for my versatility, teamwork skills, and effective communication",
     "name": "Everton Ceciliano",
@@ -47,6 +86,24 @@
     "linkedinUrl": "https://www.linkedin.com/in/evertonceciliano",
     "githubUrl": "https://github.com/EvertonCeciliano",
     "slug": "everton",
+    "role": "Front-end"
+  },
+  {
+    "imageUrl": "https://images.adagio.com/images2/custom_blends/191021.jpg",
+    "about": " Front-end developer intern at Compass UOL.  Nineteen years old, studying the 5th semester of systems analysis and development",
+    "name": "Talita Favore",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "JavaScript",
+      "React",
+      "TypeScript"
+    ],
+    "hobbies": ["Books", "Bakery", "K-dramas", "Learning Languages", "Music"],
+    "linkedinUrl": "https://www.linkedin.com/in/talita-favore",
+    "githubUrl": "https://github.com/TalitaFavore",
+    "slug": "talita",
     "role": "Front-end"
   }
 ]
