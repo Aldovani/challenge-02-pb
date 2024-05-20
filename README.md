@@ -22,6 +22,11 @@ No arquivo .env.example usamos a seguinte chave para o Clerk
 VITE_CLERK_PUBLISHABLE_KEY=pk_test_Y2xhc3NpYy1odXNreS0xOC5jbGVyay5hY2NvdW50cy5kZXYk
 ```
 
+Abra o arquivo em sua máquina
+```bash
+npm run dev
+```
+
 ## Apresentação
 ### Sing-In
 ![SingIn](https://github.com/Aldovani/challenge-02-pb/assets/165194563/d57cbd7c-db9b-4584-8d94-4cbe4c5c47a2)
