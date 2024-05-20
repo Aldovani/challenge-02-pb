@@ -12,17 +12,17 @@ Faça o clone do projeto através do terminal de sua IDE de preferência
 git clone https://github.com/Aldovani/challenge-02-pb.git
 ```
 
-Após isso instale as dependências necessárias
-```bash
-npm install
-```
-
 No arquivo .env.example usamos a seguinte chave para o Clerk
 ```bash
 VITE_CLERK_PUBLISHABLE_KEY=pk_test_Y2xhc3NpYy1odXNreS0xOC5jbGVyay5hY2NvdW50cy5kZXYk
 ```
 
-Abra o arquivo em sua máquina
+Após isso instale as dependências necessárias
+```bash
+npm install
+```
+
+Rode o comando abaixo para abrir o projeto em sua máquina
 ```bash
 npm run dev
 ```
