@@ -1,30 +1,59 @@
-# React + TypeScript + Vite
+# plantPeace 🌱 
+O plantPeace é um site de plantas fictícias, nele você encontra 4 páginas, home, register, products e about us, todas seguindo os designs e requisitos dados no [Notion](https://dramatic-water-ade.notion.site/Desafio-2-Semana-8-956e3babfbc04f9aa29dde186ddaba5). Sendo que, a página Home é a página inicial após o login, a página Register é onde você cadastra uma planta para aparecer como um produto no site nas páginas Home e Products e a página About Us diz um pouco sobre cada desenvolvedor do projeto. Durante a criação do site foi utilizado o [trello](https://trello.com/b/93wJ5xlD/challenge-02-pb) para melhor organização da equipe.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologias
+* React
+* TypeScript
+* Tailwind CSS
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Instalação
+Faça o clone do projeto através do terminal de sua IDE de preferência
+```bash
+git clone https://github.com/Aldovani/challenge-02-pb.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Após isso instale as dependências necessárias
+```bash
+npm install
+```
+
+No arquivo .env.example usamos a seguinte chave para o Clerk
+```bash
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_Y2xhc3NpYy1odXNreS0xOC5jbGVyay5hY2NvdW50cy5kZXYk
+```
+
+## Apresentação
+### Sing-In
+![SingIn](https://github.com/Aldovani/challenge-02-pb/assets/165194563/d57cbd7c-db9b-4584-8d94-4cbe4c5c47a2)
+
+
+### Clerk
+![Clerk](https://github.com/Aldovani/challenge-02-pb/assets/165194563/6c01f18e-dc73-46d4-9f28-fead41942700)
+
+
+### Home
+https://github.com/Aldovani/challenge-02-pb/assets/165194563/7309966a-1c91-4158-8edd-3e922d3bd776
+
+
+### Register
+![Register](https://github.com/Aldovani/challenge-02-pb/assets/165194563/7171a751-6f30-41ba-a30d-02660b4c7a9c)
+
+
+### Products
+https://github.com/Aldovani/challenge-02-pb/assets/165194563/d0bbece3-4062-4c35-8d1f-e6b87757dd30
+
+
+### About us
+![AboutUs](https://github.com/Aldovani/challenge-02-pb/assets/165194563/5ee3c627-4889-4a77-a95a-bc4931d0890d)
+
+
+### Error
+![Error](https://github.com/Aldovani/challenge-02-pb/assets/165194563/9b8028fd-f0f6-4888-83e3-167df386ddb1)
+
+
+## Desenvolvedores
+### [Aldovani Henrique da Costa](https://github.com/Aldovani)
+### [Beatriz Zanchin Messias](https://github.com/Biazanchin)
+### [Camila Marques de Paula](https://github.com/itsmecamila)
+### [Everton Ceciliano De Souza](https://github.com/EvertonCeciliano)
+### [Talita Berjas Favore](https://github.com/itsmecamila)
