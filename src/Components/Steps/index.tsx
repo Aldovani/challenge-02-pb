@@ -58,7 +58,7 @@ const StepsPage = () => {
               virtual garden and discover the joys of gardening with us!
             </p>
             <div className="mb-10 lg:mb-0">
-              <Button to="/"> See more photos</Button>
+              <Button to="/see-more-photos"> See more photos</Button>
             </div>
           </div>
         </div>
