@@ -80,7 +80,7 @@ export function AboutUs() {
           <div>
             <div className=" sm:sticky sm:top-16 ">
               <h2 className="text-6xl lg:text-8xl font-eb-garamond font-bold text-primary-lunar-green">
-                PlatPeace
+                PlantPeace
               </h2>
               <p className="font-lato font-bold text-dark-gray text-2xl">
                 challenge-02
