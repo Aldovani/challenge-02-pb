@@ -79,7 +79,7 @@ export function AboutUs() {
         <div className="container mx-auto flex flex-col gap-10 sm:flex-row justify-between ">
           <div>
             <div className=" sm:sticky sm:top-16 ">
-              <h2 className="sm:text-8xl text-6xl font-eb-garamond font-bold text-primary-lunar-green">
+              <h2 className="text-6xl lg:text-8xl font-eb-garamond font-bold text-primary-lunar-green">
                 PlatPeace
               </h2>
               <p className="font-lato font-bold text-dark-gray text-2xl">

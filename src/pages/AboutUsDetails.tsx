@@ -31,10 +31,10 @@ export function AboutUsDetails() {
 
       <section className="sm:px-20 px-5  py-20 ">
         <div className="container mx-auto">
-          <div className="flex flex-col gap-10 sm:flex-row justify-between ">
+          <div className="flex flex-col sm:gap-20 gap-10 sm:flex-row justify-between ">
             <div>
               <div className="sm:sticky sm:top-16 ">
-                <h2 className="sm:text-8xl text-4xl font-eb-garamond font-bold text-dark-gray">
+                <h2 className="lg:text-8xl sm:text-6xl text-4xl font-eb-garamond font-bold text-dark-gray">
                   More <br /> about me
                 </h2>
               </div>
