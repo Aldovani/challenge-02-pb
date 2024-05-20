@@ -11,3 +11,4 @@ export type FormField =
 export type FormErrors = {
   [key in FormField]?: string;
 };
+

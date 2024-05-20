@@ -3,21 +3,12 @@ import { Plants } from "../types/Plants";
 import plantImage from "../assets/image23.png";
 import { FormErrors } from "../types/Form";
 import { FormField } from "../types/Form";
-import { httpRequest } from "../utils/httpRequest";
+import { plantsService } from "../services/impls/plants";
 
 const Form = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [successMessage, setSuccessMessage] = useState<string>("");
   const [selectedLabel, setSelectedLabel] = useState<string>("");
-  const [nextId, setNextId] = useState<number>(6);
-
-  const imageUrls = [
-    "/plant1.png",
-    "/plant2.png",
-    "/plant3.png",
-    "/plant4.png",
-  ];
-  const [imageIndex, setImageIndex] = useState(0);
 
   const formatPrice = (value: string): string => {
     if (!value.startsWith("$")) {
@@ -123,13 +114,8 @@ const Form = () => {
     }
 
     const discount = formData.get("discount");
-    if (
-      (discount && !/^(\d{1,3})%?$/.test(discount as string)) ||
-      discount === "0%"
-    ) {
+    if (discount === "0%") {
       newErrors.discount = "Please enter a valid discount percentage";
-    } else if (discount && parseFloat(discount as string) > 100) {
-      newErrors.discount = "Discount percentage cannot exceed 100%";
     }
 
     if (!formData.get("label")) {
@@ -148,8 +134,7 @@ const Form = () => {
       const label = formData.get("label") as string;
       const plantType = formData.get("plantType") as string;
 
-      const newPlant: Plants = {
-        id: nextId,
+      const newPlant: Omit<Plants, "id"> = {
         name: formData.get("plantName") as string,
         subtitle: formData.get("plantSubtitle") as string,
         label: [label, plantType],
@@ -160,21 +145,19 @@ const Form = () => {
         ),
         features: formData.get("features") as string,
         description: formData.get("description") as string,
-        imgUrl: imageUrls[imageIndex],
+        imgUrl: "/plant4.png",
       };
 
       try {
-        const response = await httpRequest.post<Plants>("/", newPlant);
+        const { status, data } = await plantsService.create(newPlant);
 
-        if (response.status === 201) {
+        if (status === 201) {
           setSuccessMessage("Seu formulário foi registrado com sucesso");
           form.reset();
           setSelectedLabel("");
-          setImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-          setNextId((prevId) => prevId + 1);
         } else {
           setSuccessMessage("");
-          console.error("Erro ao enviar dados:", response.data);
+          console.error("Erro ao enviar dados:", data);
         }
       } catch (error) {
         console.error("Erro ao enviar requisição:", error);
