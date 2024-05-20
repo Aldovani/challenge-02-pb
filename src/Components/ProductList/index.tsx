@@ -3,7 +3,7 @@ import { ProductLoadList } from "./Loading";
 import { useProductList } from "./useProductList";
 
 export function ProductList() {
-  const { plants, isLoading, error } = useProductList();
+  const { plants, isLoading, error, currentPage, lastPage } = useProductList();
 
   return (
     <>
@@ -15,7 +15,11 @@ export function ProductList() {
 
         {!error && isLoading && <ProductLoadList />}
       </ul>
-      {}
+      {currentPage === lastPage && (
+        <div className="flex items-center justify-center mt-20">
+          <span className="font-raleway text-secondary-secondary">You've Reached the End!</span>
+        </div>
+      )}
       <div id="end-of-page" className="h-20 w-full"></div>
     </>
   );

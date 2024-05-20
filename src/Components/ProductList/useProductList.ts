@@ -42,5 +42,7 @@ export function useProductList() {
     plants,
     error,
     isLoading,
+    currentPage,
+    lastPage:data?.last
   };
 }
